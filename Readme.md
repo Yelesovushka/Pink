@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ксюша Елесова](https://up.htmlacademy.ru/adaptive/19/user/1166845).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Налимова](nalinia@mail.ru).
 
 ---
 
