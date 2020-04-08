@@ -8,12 +8,12 @@
 
       <header class="page-header">
 
-      <a class="page-header__logo logo" href="#">
+      <a class="page-header__logo logo" href="./index.html">
         Pink
       </a>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -23,10 +23,10 @@
               <a class="site-link" href="./photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a class="site-link" href="./form.html">Конкурс</a>
+              <a class="site-link">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a class="site-link" href="#">Html Academy</a>
+              <a class="site-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
             </li>
           </ul>
         </div>
@@ -37,11 +37,88 @@
     <main class="page-main">
 
       <section class="main-header">
-        <h2 class="main-header__head">Конкурс на самое безбашенное путешествие с Пинк</h2>
+        <h1 class="main-header__head">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
 
       <section class="profile">
-        <form class="profile__form">
+        <h2 class="visually-hidden">Форма конкурса</h2>
+        <form class="profile__form" action="https://echo.htmlacademy.ru">
+          <p class="profile__title-text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+
+          <label class="profile__item">
+            Фамилия:
+            <input class="profile__enter" type="text" name="surname" placeholder="Укажите фамилию *" required>
+          </label>
+          <label class="profile__item">
+            Имя:
+            <input class="profile__enter" type="text" name="name" placeholder="Введите ваше имя *" required>
+          </label>
+          <label class="profile__item">
+            Отчество:
+            <input class="profile__enter" type="text" name="middlename" placeholder="Ну и отчество тоже">
+          </label>
+
+          <fieldset class="profile__achievements profile__fieldset">
+            <legend class="profile__text">Ваши безбашенные достижения в путешествии</legend>
+            <label class="profile__fieldset-item">
+              <input class="profile__checkbox" type="checkbox" name="selfie-with-shark">
+              Сделал селфи с акулой
+            </label>
+            <label class="profile__fieldset-item">
+              <input class="profile__checkbox" type="checkbox" name="burn-on-beach">
+              Обгорел на пляже
+            </label>
+            <label class="profile__fieldset-item">
+              <input class="profile__checkbox" type="checkbox" name="chuck-norris">
+              Видел Чака Норриса
+            </label>
+            <label class="profile__fieldset-item">
+              <input class="profile__checkbox" type="checkbox" name="bought-souvenirs">
+              Накупил сувениров
+            </label>
+            <label class="profile__fieldset-item">
+              <input class="profile__checkbox" type="checkbox" name="keep-tower">
+              Удержал башню
+            </label>
+            <label class="profile__fieldset-item">
+              <input class="profile__checkbox" type="checkbox" name="smash-hotel">
+              Разгромил отель
+            </label>
+          </fieldset>
+
+          <label class="profile__item">
+            Номер телефона:
+            <input class="profile__enter" type="tel" name="phone" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="profile__item">
+            Адрес почты
+            <input class="profile__enter" type="email" name="email" placeholder="Введите почту *" required>
+          </label>
+
+          <fieldset class="profile__apps profile__fieldset">
+            <legend class="profile__text">С каким приложением путешествовали?</legend>
+            <label class="profile__fieldset-item">
+              <input class="profile__radio" type="radio" name="apps" value="ios">
+              Pink на iOS
+            </label>
+            <label class="profile__fieldset-item">
+              <input class="profile__radio" type="radio" name="apps" value="android">
+              Pink на Android
+            </label>
+            <label class="profile__fieldset-item">
+              <input class="profile__radio" type="radio" name="apps" value="windows">
+              Windows Phone
+            </label>
+          </fieldset>
+
+          <label class="profile__item">
+            Опишите свои эмоции
+            <textarea name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </label>
+
+          <input class="profile__button" type="submit" name="submit" value="Оправить форму">
+
+          <b class="profile__text-end">* - обязательные поля</b>
 
         </form>
       </section>
@@ -49,7 +126,7 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo site-link" href="#">
+      <a class="page-footer__logo site-link" href="./index.html">
         <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип фотоприложения Пинк">
         Pink
       </a>
@@ -70,7 +147,7 @@
           </a>
         </li>
       </ul>
-      <a class="page-footer__academy-link site-link" href="">
+      <a class="page-footer__academy-link site-link" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
         <img class="page-footer__academy-logo" src="" width="" height="" alt="Логотип Академии">
       </a>
