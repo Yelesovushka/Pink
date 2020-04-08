@@ -117,32 +117,63 @@
       <section class="rates">
         <div class="rates__wrapper slider">
           <h2 class="visually-hidden">Тарифы</h2>
-          <ul class="rates__list slider-list">
-            <li class="rates__item slider-item">
-              <ul class="rates__rate-list">
-                <li class="rates__rate-item rates__rate-item-title">Лайт <span class="rates__price">1,99 USD</span></li>
-                <li class="rates__rate-item rates__rate-item-yes">Розовый фильтр</li>
-                <li class="rates__rate-item rates__rate-item-no">Смайлики</li>
-                <li class="rates__rate-item rates__rate-item-no">Комментарии</li>
-              </ul>
-            </li>
-            <li class="rates__item slider-item">
-              <ul class="rates__rate-list">
-                <li class="rates__rate-item rates__rate-item-title hit">Стандарт <span class="rates__price">3,99 USD</span></li>
-                <li class="rates__rate-item rates__rate-item-yes">Розовый фильтр</li>
-                <li class="rates__rate-item rates__rate-item-yes">Смайлики</li>
-                <li class="rates__rate-item rates__rate-item-no">Комментарии</li>
-              </ul>
-            </li>
-            <li class="rates__item slider-item">
-              <ul class="rates__rate-list">
-                <li class="rates__rate-item rates__rate-item-title">Полный <span class="rates__price">5,99 USD</span></li>
-                <li class="rates__rate-item rates__rate-item-yes">Розовый фильтр</li>
-                <li class="rates__rate-item rates__rate-item-yes">Смайлики</li>
-                <li class="rates__rate-item rates__rate-item-yes">Комментарии</li>
-              </ul>
-            </li>
-          </ul>
+          <div class="rates__tables slider-list">
+
+            <table class="rates__table slider-item">
+              <th class="rates__table-row rates__table-title">
+                <td class="rates__table-data">Лайт <span class="rates__price">1,99 USD</span></td>
+              </th>
+              <tr class="rates__table-row">
+                <td class="rates__table-data">Розовый фильтр</td>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+              </tr>
+              <tr class="rates__table-row">
+                <td class="rates__table-data">Смайлики</td>
+                <td class="rates__table-data"><span class="rates__no">Нет</span></td>
+              </tr>
+              <tr class="rates__table-row">
+                <td class="rates__table-data">Комментарии</td>
+                <td class="rates__table-data"><span class="rates__no">Нет</span></td>
+              </tr>
+            </table>
+
+            <table class="rates__table slider-item">
+              <th class="rates__table-row rates__table-title">
+                <td class="rates__table-data">Стандарт <span class="rates__price">3,99 USD</span></td>
+              </th>
+              <tr class="rates__table-row">
+                <td class="rates__table-data">Розовый фильтр</td>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+              </tr>
+              <tr class="rates__table-row">
+                <td class="rates__table-data">Смайлики</td>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+              </tr>
+              <tr class="rates__table-row">
+                <td class="rates__table-data">Комментарии</td>
+                <td class="rates__table-data"><span class="rates__no">Нет</span></td>
+              </tr>
+            </table>
+
+            <table class="rates__table slider-item">
+              <th class="rates__table-row rates__table-title">
+                <td class="rates__table-data">Полный <span class="rates__price">5,99 USD</span></td>
+              </th>
+              <tr class="rates__table-row">
+                <td class="rates__table-data">Розовый фильтр</td>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+              </tr>
+              <tr class="rates__table-row">
+                <td class="rates__table-data">Смайлики</td>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+              </tr>
+              <tr class="rates__table-row">
+                <td class="rates__table-data">Комментарии</td>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+              </tr>
+            </table>
+
+          </div>
           <p class="rates__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
@@ -159,11 +190,11 @@
         <ul class="contacts__list">
           <li class="contacts__item">
             Звоните
-            <a class="contacts__item-info" href="tel:88125556666">+7 (812) 555-66-66</a>
+            <a class="contacts__item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contacts__item">
             Пишите
-            <a class="contacts__item-info" href="#">mail@htmlacademy.ru</a>
+            <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
           <li class="contacts__item">
             Приезжайте в гости
@@ -174,7 +205,31 @@
       </section>
 
       <footer class="page-footer">
-
+        <a class="page-footer__logo site-link">
+        <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип фотоприложения Пинк">
+        Pink
+      </a>
+      <ul class="page-footer__socials site-list">
+        <li class="page-footer__item">
+          <a class="site-link" href="#">
+            <img class="page-footer__twitter" src="" width="" height="" alt="Twitter">
+          </a>
+        </li>
+        <li>
+          <a class="site-link" href="#">
+            <img class="page-footer__facebook" src="" width="" height="" alt="Facebook">
+          </a>
+        </li>
+        <li>
+          <a class="site-link" href="#">
+            <img class="page-footer__youtube" src="" width="" height="" alt="YouTube">
+          </a>
+        </li>
+      </ul>
+      <a class="page-footer__academy-link site-link" href="https://htmlacademy.ru/intensive/adaptive">
+        Разработано
+        <img class="page-footer__academy-logo" src="" width="" height="" alt="Логотип Академии">
+      </a>
       </footer>
 
     </main>
