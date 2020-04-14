@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
 
@@ -41,24 +42,24 @@
       <section class="downloads">
         <h2 class="visually-hidden">Скачать приложение</h2>
         <header class="downloads__header main-header">
-          <img class="downloads__image" src="" width="" height="" alt="Рука с телефоном">
+          <img class="downloads__image" src="./img/iphone-hand-mobile@1x.png" width="" height="" alt="Рука с телефоном">
         </header>
         <div class="downloads__apps">
           <a class="downloads__link site-link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
-          <ul class="downloads__list-apps">
-            <li class="downloads__item">
+          <ul class="downloads__list-apps site-list">
+            <li class="downloads__item site-list__item">
               <a class="site-link" href="https://www.apple.com/ru/ios/app-store/">
-                <img class="downloads__app-store" src="" width="" height="" alt="App Store">
+                <img class="downloads__app-store" src="./img/logo-apple.svg" width="" height="" alt="App Store">
               </a>
             </li>
-            <li>
+            <li class="site-list__item">
               <a class="site-link" href="https://play.google.com/store">
-                <img class="downloads__google-play" src="" width="" height="" alt="Google Play">
+                <img class="downloads__google-play" src="./img/logo-android.svg" width="" height="" alt="Google Play">
               </a>
             </li>
-            <li>
+            <li class="site-list__item">
               <a class="site-link" href="https://www.microsoft.com/ru-ru">
-                <img class="downloads__microsoft-store" src="" width="" height="" alt="Microsoft Store">
+                <img class="downloads__microsoft-store" src="./img/logo-microsoft.svg" width="" height="" alt="Microsoft Store">
               </a>
             </li>
           </ul>
@@ -72,36 +73,36 @@
           <b>Устали от серости мегаполиса?</b>
           <b>Нам есть, что вам предложить!</b>
         </p>
-        <ul class="advantages__list">
-          <li class="advantages__item">
+        <ul class="advantages__list site-list">
+          <li class="advantages__item site-list__item">
             <h3 class="advantages__header">Поднимает настроение</h3>
             <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item site-list__item">
             <h3 class="advantages__header">Меняет мир вокруг</h3>
             <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item site-list__item">
             <h3 class="advantages__header">Заводит новых друзей</h3>
             <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="advantages__image" src="" width="" height="" alt="Телефон со смайликом">
+        <img class="advantages__image" src="./img/iphone-screen-mobile@1x.png" width="" height="" alt="Телефон со смайликом">
       </section>
 
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
-          <ul class="reviews__list slider-list">
-            <li class="reviews__item slider-item">
+          <ul class="reviews__list slider-list site-list">
+            <li class="reviews__item slider-item site-list__item">
               <h3 class="reviews__author">Николай Петров</h3>
               <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомлся со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
             </li>
-            <li class="reviews__item slider-item">
+            <li class="reviews__item slider-item site-list__item">
               <h3 class="reviews__author">Николай Петров</h3>
               <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомлся со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
             </li>
-            <li class="reviews__item slider-item">
+            <li class="reviews__item slider-item site-list__item">
               <h3 class="reviews__author">Николай Петров</h3>
               <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомлся со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
             </li>
@@ -120,55 +121,55 @@
           <div class="rates__tables slider-list">
 
             <table class="rates__table slider-item">
-              <th class="rates__table-row rates__table-title">
-                <td class="rates__table-data">Лайт <span class="rates__price">1,99 USD</span></td>
-              </th>
+              <tr class="rates__table-row rates__table-title">
+                <caption class="rates__table-data">Лайт <span class="rates__price">1,99 USD</span></caption>
+              </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Розовый фильтр</td>
+                <th class="rates__table-data">Розовый фильтр</th>
                 <td class="rates__table-data"><span class="rates__yes">Да</span></td>
               </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Смайлики</td>
+                <th class="rates__table-data">Смайлики</th>
                 <td class="rates__table-data"><span class="rates__no">Нет</span></td>
               </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Комментарии</td>
-                <td class="rates__table-data"><span class="rates__no">Нет</span></td>
-              </tr>
-            </table>
-
-            <table class="rates__table slider-item">
-              <th class="rates__table-row rates__table-title">
-                <td class="rates__table-data">Стандарт <span class="rates__price">3,99 USD</span></td>
-              </th>
-              <tr class="rates__table-row">
-                <td class="rates__table-data">Розовый фильтр</td>
-                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
-              </tr>
-              <tr class="rates__table-row">
-                <td class="rates__table-data">Смайлики</td>
-                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
-              </tr>
-              <tr class="rates__table-row">
-                <td class="rates__table-data">Комментарии</td>
+                <th class="rates__table-data">Комментарии</th>
                 <td class="rates__table-data"><span class="rates__no">Нет</span></td>
               </tr>
             </table>
 
             <table class="rates__table slider-item">
-              <th class="rates__table-row rates__table-title">
-                <td class="rates__table-data">Полный <span class="rates__price">5,99 USD</span></td>
-              </th>
+              <tr class="rates__table-row rates__table-title">
+                <caption class="rates__table-data">Стандарт <span class="rates__price">3,99 USD</span></caption>
+              </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Розовый фильтр</td>
+                <th class="rates__table-data">Розовый фильтр</th>
                 <td class="rates__table-data"><span class="rates__yes">Да</span></td>
               </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Смайлики</td>
+                <th class="rates__table-data">Смайлики</th>
                 <td class="rates__table-data"><span class="rates__yes">Да</span></td>
               </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Комментарии</td>
+                <th class="rates__table-data">Комментарии</th>
+                <td class="rates__table-data"><span class="rates__no">Нет</span></td>
+              </tr>
+            </table>
+
+            <table class="rates__table slider-item">
+              <tr class="rates__table-row rates__table-title">
+                <caption class="rates__table-data">Полный <span class="rates__price">5,99 USD</span></caption>
+              </tr>
+              <tr class="rates__table-row">
+                <th class="rates__table-data">Розовый фильтр</th>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+              </tr>
+              <tr class="rates__table-row">
+                <th class="rates__table-data">Смайлики</th>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+              </tr>
+              <tr class="rates__table-row">
+                <th class="rates__table-data">Комментарии</th>
                 <td class="rates__table-data"><span class="rates__yes">Да</span></td>
               </tr>
             </table>
@@ -187,49 +188,48 @@
         <p class="contacts__text">
           Остались вопросы? Свяжитесь с нами!
         </p>
-        <ul class="contacts__list">
-          <li class="contacts__item">
+        <ul class="contacts__list site-list">
+          <li class="contacts__item site-list__item">
             Звоните
             <a class="contacts__item-info" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item site-list__item">
             Пишите
             <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item site-list__item">
             Приезжайте в гости
             <span class="contacts__item-info">ул. Большая Конюшенная, 19/8</span>
           </li>
         </ul>
-        <img class="contacts__map" src="" width="" height="" alt="Карта">
+        <img class="contacts__map" src="./img/bg-map-mobile@1x.png" width="" height="" alt="Карта">
       </section>
 
       <footer class="page-footer">
         <a class="page-footer__logo site-link">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип фотоприложения Пинк">
-        Pink
-      </a>
-      <ul class="page-footer__socials site-list">
-        <li class="page-footer__item">
-          <a class="site-link" href="#">
-            <img class="page-footer__twitter" src="" width="" height="" alt="Twitter">
-          </a>
-        </li>
-        <li>
-          <a class="site-link" href="#">
-            <img class="page-footer__facebook" src="" width="" height="" alt="Facebook">
-          </a>
-        </li>
-        <li>
-          <a class="site-link" href="#">
-            <img class="page-footer__youtube" src="" width="" height="" alt="YouTube">
-          </a>
-        </li>
-      </ul>
-      <a class="page-footer__academy-link site-link" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
-        <img class="page-footer__academy-logo" src="" width="" height="" alt="Логотип Академии">
-      </a>
+          <img class="page-footer__logo-image" src="./img/logo-pink-blue-mobile.svg" width="" height="" alt="Логотип фотоприложения Пинк">
+        </a>
+        <ul class="page-footer__socials site-list">
+          <li class="page-footer__item">
+            <a class="site-link" href="#">
+              <img class="page-footer__twitter" src="./img/icon-twitter.svg" width="" height="" alt="Twitter">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="site-link" href="#">
+              <img class="page-footer__facebook" src="./img/icon-facebook.svg" width="" height="" alt="Facebook">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="site-link" href="#">
+              <img class="page-footer__youtube" src="./img/icon-youtube.svg" width="" height="" alt="YouTube">
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__academy-link site-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <img class="page-footer__academy-logo" src="./img/logo-htmlacademy.svg" width="" height="" alt="Логотип Академии">
+        </a>
       </footer>
 
     </main>
