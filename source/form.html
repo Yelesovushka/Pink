@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
 
-      <header class="page-header">
+    <header class="page-header">
 
       <a class="page-header__logo logo" href="./index.html">
         Pink
@@ -37,7 +38,7 @@
     <main class="page-main">
 
       <section class="main-header">
-        <h1 class="main-header__head">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       </section>
 
       <section class="profile">
@@ -113,7 +114,7 @@
 
           <label class="profile__item">
             Опишите свои эмоции
-            <textarea name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <textarea class="profile__emotions" name="emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
           </label>
 
           <input class="profile__button" type="submit" name="submit" value="Оправить форму">
@@ -126,32 +127,31 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo site-link" href="./index.html">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="" height="" alt="Логотип фотоприложения Пинк">
-        Pink
-      </a>
-      <ul class="page-footer__socials site-list">
-        <li class="page-footer__item">
-          <a class="site-link" href="#">
-            <img class="page-footer__twitter" src="" width="" height="" alt="Twitter">
-          </a>
-        </li>
-        <li>
-          <a class="site-link" href="#">
-            <img class="page-footer__facebook" src="" width="" height="" alt="Facebook">
-          </a>
-        </li>
-        <li>
-          <a class="site-link" href="#">
-            <img class="page-footer__youtube" src="" width="" height="" alt="YouTube">
-          </a>
-        </li>
-      </ul>
-      <a class="page-footer__academy-link site-link" href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
-        <img class="page-footer__academy-logo" src="" width="" height="" alt="Логотип Академии">
-      </a>
-    </footer>
+        <a class="page-footer__logo site-link">
+          <img class="page-footer__logo-image" src="./img/logo-pink-blue-mobile.svg" width="" height="" alt="Логотип фотоприложения Пинк">
+        </a>
+        <ul class="page-footer__socials site-list">
+          <li class="page-footer__item">
+            <a class="site-link" href="#">
+              <img class="page-footer__twitter" src="./img/icon-twitter.svg" width="" height="" alt="Twitter">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="site-link" href="#">
+              <img class="page-footer__facebook" src="./img/icon-facebook.svg" width="" height="" alt="Facebook">
+            </a>
+          </li>
+          <li class="page-footer__item">
+            <a class="site-link" href="#">
+              <img class="page-footer__youtube" src="./img/icon-youtube.svg" width="" height="" alt="YouTube">
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__academy-link site-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <img class="page-footer__academy-logo" src="./img/logo-htmlacademy.svg" width="" height="" alt="Логотип Академии">
+        </a>
+      </footer>
 
   </body>
 </html>
