@@ -1,5 +1,4 @@
 .main-header {
-  font-family: OpenSans, Arial, sans-serif;
   font-size: 24px;
   font-weight: 300;
   font-stretch: normal;
@@ -11,7 +10,7 @@
 
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-color: black;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center center;
 }
 
@@ -31,4 +30,23 @@
 
 .visually-hidden {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    height: 320px;
+  }
+
+  .main-header__title {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    height: 280px;
+  }
+  .main-header__title {
+    margin: 0;
+  }
 }

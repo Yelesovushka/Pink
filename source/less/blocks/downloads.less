@@ -1,5 +1,9 @@
 .downloads {
-  font-family: OpenSans, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 670px;
+
   font-size: 14px;
   font-weight: 300;
   font-stretch: normal;
@@ -12,12 +16,74 @@
   outline: 1px solid blue;
 }
 
-.downloads__link {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1;
+.downloads__header {
+  height: 396px;
+}
+
+.downloads__header-text {
+  height: 110px;
+  margin: 0;
 }
 
 .downloads__apps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 271px;
+
   background-color: @dark;
+}
+
+.downloads__link {
+  width: 281px;
+  height: 35px;
+
+  padding-top: 20px;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+
+  border: 3px solid @white;
+  border-radius: 50px;
+}
+
+.downloads__list-apps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 281px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .downloads{
+    min-height: 620px;
+
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-color: black;
+    background-repeat: repeat;
+    background-position: center center;
+  }
+
+  .downloads__list-apps {
+    min-width: 300px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .downloads{
+    min-height: 620px;
+
+    background-image: url(../img/bg-back-mobile@1x.jpg);
+    background-color: black;
+    background-repeat: repeat;
+    background-position: center center;
+  }
+
+  .downloads__list-apps {
+    min-width: 300px;
+  }
 }

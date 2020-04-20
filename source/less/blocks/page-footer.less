@@ -1,5 +1,6 @@
 .page-footer {
-  font-family: OpenSans, Arial, sans-serif;
+  display: none;
+
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -10,4 +11,34 @@
   color: @dark;
 
   outline: 1px solid green;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 127px;
+  }
+
+  .page-footer__socials {
+    display: flex;
+    justify-content: space-between;
+    width: 172px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 197px;
+  }
+
+  .page-footer__socials {
+    display: flex;
+    justify-content: space-between;
+    width: 172px;
+  }
 }
