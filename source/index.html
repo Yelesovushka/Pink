@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
@@ -10,23 +11,23 @@
     <header class="page-header">
 
       <a class="page-header__logo logo">
-        Pink
+        <img class="page-header__logo-image" src="../img/logo-pink-white-mobile.svg" width="75px" height="22px">
       </a>
 
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="main-nav__item site-list__item">
               <a class="site-link">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item site-list__item">
               <a class="site-link" href="./photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item site-list__item">
               <a class="site-link" href="./form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item site-list__item">
               <a class="site-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
             </li>
           </ul>
@@ -43,24 +44,24 @@
         <h2 class="visually-hidden">Скачать приложение</h2>
         <header class="downloads__header main-header">
           <p class="downloads__header-text">Взгляните на жизнь иначе!</p>
-          <img class="downloads__image" src="./img/iphone-hand-mobile@1x.png" width="" height="" alt="Рука с телефоном">
+          <!--<img class="downloads__image" src="./img/iphone-hand-mobile@1x.png" width="320px" height="314px" alt="Рука с телефоном">-->
         </header>
         <div class="downloads__apps">
           <a class="downloads__link site-link" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
           <ul class="downloads__list-apps site-list">
             <li class="downloads__item site-list__item">
               <a class="site-link" href="https://www.apple.com/ru/ios/app-store/">
-                <img class="downloads__app-store" src="./img/logo-apple.svg" width="" height="" alt="App Store">
+                <img class="downloads__app-store" src="./img/logo-apple.svg" width="47px" height="56px" alt="App Store">
               </a>
             </li>
             <li class="site-list__item">
               <a class="site-link" href="https://play.google.com/store">
-                <img class="downloads__google-play" src="./img/logo-android.svg" width="" height="" alt="Google Play">
+                <img class="downloads__google-play" src="./img/logo-android.svg" width="43px" height="47px" alt="Google Play">
               </a>
             </li>
             <li class="site-list__item">
               <a class="site-link" href="https://www.microsoft.com/ru-ru">
-                <img class="downloads__microsoft-store" src="./img/logo-microsoft.svg" width="" height="" alt="Microsoft Store">
+                <img class="downloads__microsoft-store" src="./img/logo-microsoft.svg" width="44px" height="41px" alt="Microsoft Store">
               </a>
             </li>
           </ul>
@@ -74,21 +75,31 @@
           <b>Устали от серости мегаполиса?</b>
           <b>Нам есть, что вам предложить!</b>
         </p>
-        <ul class="advantages__list site-list">
-          <li class="advantages__item site-list__item">
-            <h3 class="advantages__header">Поднимает настроение</h3>
-            <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
-          <li class="advantages__item site-list__item">
-            <h3 class="advantages__header">Меняет мир вокруг</h3>
-            <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
-          <li class="advantages__item site-list__item">
-            <h3 class="advantages__header">Заводит новых друзей</h3>
-            <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <img class="advantages__image" src="./img/iphone-screen-mobile@1x.png" width="" height="" alt="Телефон со смайликом">
+        <div class="advantages__wrapper">
+          <ul class="advantages__list site-list">
+            <li class="advantages__item site-list__item">
+              <h3 class="advantages__header">Поднимает настроение</h3>
+              <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item site-list__item">
+              <h3 class="advantages__header">Меняет мир вокруг</h3>
+              <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
+            <li class="advantages__item site-list__item">
+              <h3 class="advantages__header">Заводит новых друзей</h3>
+              <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
+          <img class="advantages__image" src="./img/iphone-screen-mobile@1x.png" width="157px" height="320px" alt="Телефон со смайликом">
+        </div>
+        <div class="advantages__hours visually-hidden">
+          <b class="advantages__hours-24">24</b>
+          <div class="advantages__item-text">
+            <h3 class="advantages__hours-title">Эффект на 24 часа!</h3>
+            <p> Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="advantages__hours-link" href="#">Узнать больше об исследовании</a>
+          </div>
+        </div>
       </section>
 
       <section class="reviews">
@@ -205,17 +216,17 @@
           <img class="page-footer__logo-image" src="./img/logo-pink-blue-mobile.svg" width="" height="" alt="Логотип фотоприложения Пинк">
         </a>
         <ul class="page-footer__socials site-list">
-          <li class="page-footer__item">
+          <li class="page-footer__item site-list__item">
             <a class="site-link" href="#">
               <img class="page-footer__twitter" src="./img/icon-twitter.svg" width="" height="" alt="Twitter">
             </a>
           </li>
-          <li class="page-footer__item">
+          <li class="page-footer__item site-list__item">
             <a class="site-link" href="#">
               <img class="page-footer__facebook" src="./img/icon-facebook.svg" width="" height="" alt="Facebook">
             </a>
           </li>
-          <li class="page-footer__item">
+          <li class="page-footer__item site-list__item">
             <a class="site-link" href="#">
               <img class="page-footer__youtube" src="./img/icon-youtube.svg" width="" height="" alt="YouTube">
             </a>
