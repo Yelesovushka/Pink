@@ -108,14 +108,17 @@
           <ul class="reviews__list slider-list site-list">
             <li class="reviews__item slider-item site-list__item">
               <h3 class="reviews__author">Николай Петров</h3>
+              <p class="reviews__author-info visually-hidden">25 лет, водитель трамвая</p>
               <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомлся со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
             </li>
             <li class="reviews__item slider-item site-list__item">
               <h3 class="reviews__author">Николай Петров</h3>
+              <p class="reviews__author-info visually-hidden">25 лет, водитель трамвая</p>
               <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомлся со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
             </li>
             <li class="reviews__item slider-item site-list__item">
               <h3 class="reviews__author">Николай Петров</h3>
+              <p class="reviews__author-info visually-hidden">25 лет, водитель трамвая</p>
               <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомлся со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
             </li>
           </ul>
@@ -131,55 +134,81 @@
         <div class="rates__wrapper slider">
           <h2 class="visually-hidden">Тарифы</h2>
           <div class="rates__tables slider-list">
-
+            <table class="rates__table">
+              <tr>
+                <th></th>
+                <td class="rates__table-title rates__table-data">База <span class="rates__price">1,99 USD</span></td>
+                <td class="rates__table-title rates__table-data">Стандарт <span class="rates__price">3,99 USD</span></td>
+                <td class="rates__table-title rates__table-data">Анлим <span class="rates__price">9,99 USD</span></td>
+              </tr>
+              <tr class="rates__table-row">
+                <th class="rates__table-data">Розовый фильтр</th>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+              </tr>
+              <tr class="rates__table-row">
+                <th class="rates__table-data">Смайлики</th>
+                <td class="rates__table-data"><span class="rates__no">Нет</span></td>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+              </tr>
+              <tr class="rates__table-row">
+                <th class="rates__table-data">Комментарии</th>
+                <td class="rates__table-data"><span class="rates__no">Нет</span></td>
+                <td class="rates__table-data"><span class="rates__no">Нет</span></td>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
+              </tr>
+            </table>
+<!--
             <table class="rates__table slider-item">
-              <caption class="rates__table-title rates__table-data">Лайт <span class="rates__price">1,99 USD</span></caption>
+              <caption class="rates__table-title rates__table-data">База <span class="rates__price">1,99 USD</span></caption>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Розовый фильтр</td>
-                <td class="rates__table-data"><span class="rates__yes"></span></td>
+                <th class="rates__table-data">Розовый фильтр</th>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
               </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Смайлики</td>
-                <td class="rates__table-data"><span class="rates__no"></span></td>
+                <th class="rates__table-data">Смайлики</th>
+                <td class="rates__table-data"><span class="rates__no">Нет</span></td>
               </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Комментарии</td>
-                <td class="rates__table-data"><span class="rates__no"></span></td>
+                <th class="rates__table-data">Комментарии</th>
+                <td class="rates__table-data"><span class="rates__no">Нет</span></td>
               </tr>
             </table>
 
             <table class="rates__table slider-item">
                 <caption class="rates__table-title rates__table-data">Стандарт <span class="rates__price">3,99 USD</span></caption>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Розовый фильтр</td>
-                <td class="rates__table-data"><span class="rates__yes"></span></td>
+                <th class="rates__table-data">Розовый фильтр</th>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
               </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Смайлики</td>
-                <td class="rates__table-data"><span class="rates__yes"></span></td>
+                <th class="rates__table-data">Смайлики</th>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
               </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Комментарии</td>
-                <td class="rates__table-data"><span class="rates__no"></span></td>
+                <th class="rates__table-data">Комментарии</th>
+                <td class="rates__table-data"><span class="rates__no">Нет</span></td>
               </tr>
             </table>
 
             <table class="rates__table slider-item">
-                <caption class="rates__table-title rates__table-data">Полный <span class="rates__price">5,99 USD</span></caption>
+                <caption class="rates__table-title rates__table-data">Анлим <span class="rates__price">9,99 USD</span></caption>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Розовый фильтр</td>
-                <td class="rates__table-data"><span class="rates__yes"></span></td>
+                <th class="rates__table-data">Розовый фильтр</th>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
               </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Смайлики</td>
-                <td class="rates__table-data"><span class="rates__yes"></span></td>
+                <th class="rates__table-data">Смайлики</th>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
               </tr>
               <tr class="rates__table-row">
-                <td class="rates__table-data">Комментарии</td>
-                <td class="rates__table-data"><span class="rates__yes"></span></td>
+                <th class="rates__table-data">Комментарии</th>
+                <td class="rates__table-data"><span class="rates__yes">Да</span></td>
               </tr>
             </table>
-
+-->
           </div>
           <p class="rates__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
@@ -192,7 +221,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Как с нами связаться</h2>
         <p class="contacts__text">
-          Остались вопросы? Свяжитесь с нами!
+          Остались вопросы? <br> Свяжитесь с нами!
         </p>
         <ul class="contacts__list site-list">
           <li class="contacts__item site-list__item">
@@ -203,15 +232,17 @@
             Пишите
             <a class="contacts__item-info site-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
-          <li class="contacts__item site-list__item">
+          <li class="contacts__item contacts__item-address site-list__item">
             Приезжайте в гости
-            <span class="contacts__item-info">ул. Большая Конюшенная, 19/8</span>
+            <span class="contacts__item-info">ул. Большая <br> Конюшенная, 19/8</span>
           </li>
         </ul>
-        <img class="contacts__map" src="./img/bg-map-mobile@1x.png" width="" height="" alt="Карта">
+        <img class="contacts__map-mobile visually-hidden" src="./img/bg-map-mobile@1x.png" width="" height="" alt="Карта">
+        <img class="contacts__map-tablet visually-hidden" src="./img/bg-map-tablet@1x.jpg" width="" height="" alt="Карта">
+        <img class="contacts__map-desktop visually-hidden" src="./img/bg-map-desktop@1x.jpg" width="" height="" alt="Карта">
       </section>
 
-      <footer class="page-footer">
+      <footer class="page-footer visually-hidden">
         <a class="page-footer__logo site-link">
           <img class="page-footer__logo-image" src="./img/logo-pink-blue-mobile.svg" width="" height="" alt="Логотип фотоприложения Пинк">
         </a>

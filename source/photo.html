@@ -178,26 +178,25 @@
 
       <section class="photo-editor">
         <h2 class="visually-hidden">Обработка фото</h2>
-        <p class="photo-editor__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="photo-editor__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
         <div class="photo-editor__wrapper">
-          <img class="photo-editor__photo" src="./img/photo-road-mobile@1x.jpg" width="" height="" alt="Красивое фото">
+          <img class="photo-editor__photo" src="./img/photo-road-mobile@1x.jpg" width="280px" height="374px" alt="Красивое фото">
           <form class="photo-editor__tools" action="https://echo.htmlacademy.ru">
             <label class="photo-editor__tool">
               <img class="photo-editor__cut" src="./img/icon-editor-crop.svg" width="" height="" alt="Обрезать">
-              <input class="photo-editor__range" type="range" name="cut">
+              <input class="photo-editor__range-cut" type="range" name="cut">
             </label>
             <label class="photo-editor__tool">
               <img class="photo-editor__bright" src="./img/icon-editor-fill.svg" width="" height="" alt="Яркость">
-              <input class="photo-editor__range" type="range" name="bright">
+              <input class="photo-editor__range-bright visually-hidden" type="range" name="bright">
             </label>
             <label class="photo-editor__tool">
               <img class="photo-editor__contrast" src="./img/icon-editor-contrast.svg" width="" height="" alt="Контрастность">
-              <input class="photo-editor__range" type="range" name="contrast">
+              <input class="photo-editor__range-contrast visually-hidden" type="range" name="contrast">
             </label>
             <button class="photo-editor__post-button site-link" type="submit">Запостить</button>
             <button class="photo-editor__reset-button site-link" type="reset">Отмена</button>
           </form>
-
         </div>
       </section>
 

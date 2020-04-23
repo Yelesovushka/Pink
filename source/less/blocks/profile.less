@@ -1,11 +1,17 @@
 .profile {
-  font-family: OpenSans, Aial, sans-serif;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
 
   outline: 1px solid red;
+}
+
+.profile-form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
 }
 
 .profile__title-text {
@@ -45,6 +51,8 @@
 }
 
 .profile__fieldset {
+  display: flex;
+  flex-direction: column;
   border: none;
   background-color: @white-two;
 }
@@ -70,5 +78,14 @@
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
   border-radius: 1px;
+
+}
+
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
 
 }

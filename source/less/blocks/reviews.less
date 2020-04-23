@@ -18,3 +18,42 @@
   line-height: 1.67;
   color: @black;
 }
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__text {
+    order: -1;
+  }
+
+  .reviews__author-info {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__text {
+    padding-top: 80px;
+    order: -1;
+  }
+
+  .reviews__author-info {
+    display: inline-block;
+  }
+
+  .reviews__item::before {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 63px;
+    top: 0;
+    left: 50%;
+    background-image: url(../img/icon-quotes.svg);
+    background-repeat: no-repeat;
+  }
+}
