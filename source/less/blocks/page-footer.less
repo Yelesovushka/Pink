@@ -1,4 +1,6 @@
 .page-footer {
+  display: block;
+  padding: 40px 70px;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -7,36 +9,39 @@
   letter-spacing: normal;
   text-align: left;
   color: @dark;
-
-  outline: 1px solid green;
 }
 
-.page-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 284px;
-  }
+.page-footer__logo {
+  display: block;
+  text-align: center;
 
-  .page-footer__socials {
-    display: flex;
-    justify-content: space-between;
-    width: 172px;
-  }
+}
+
+.page-footer__socials {
+
+}
+
+.page-footer__item {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+
+  border: 3px solid @white-two;
+  border-radius: 50%;
+}
 
 @media (min-width: @tablet-width) {
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 127px;
+    padding: 0 20px;
   }
 
   .page-footer__socials {
     display: flex;
     justify-content: space-between;
-    width: 172px;
+
   }
 }
 

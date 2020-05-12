@@ -147,10 +147,8 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
-    margin-right: 130px;
   }
 
   .main-nav__item {
@@ -160,10 +158,6 @@
   }
 
   .main-nav__list .site-link {
-    display: block;
-    margin-top: 37px;
-    padding: 10px;
-
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
@@ -180,7 +174,7 @@
   }
 
   &:active {
-    border-bottom: 2px solid @white;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 }
