@@ -87,16 +87,19 @@
 }
 
 .rates__title {
-  padding: 23px 0;
+  padding: 15px 0 19px 0;
   width: 280px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
   text-align: center;
   color: @white;
+  text-transform: uppercase;
 
   background-color: @dark;
   border-right: 2px solid #e5e5e5;
+  border-top: 2px solid @dark;
+  border-bottom: 2px solid @dark;
 
   &--first {
     border-radius: 2px 0 0 0;
@@ -167,5 +170,9 @@
 }
 
 @media (min-width: @desktop-width) {
+
+  .rates::before {
+    border-top: 81px solid #ffffff;
+  }
 
 }

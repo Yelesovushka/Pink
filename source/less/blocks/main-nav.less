@@ -141,7 +141,7 @@
   .main-nav {
     min-height: 110px;
 
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .main-nav__list {
@@ -152,30 +152,37 @@
   }
 
   .main-nav__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 41px;
     min-height: 110px;
-
-    background-color: black;
+    width: auto;
   }
 
   .main-nav__list .site-link {
+    padding: 10px 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
     color: @white;
     text-transform: none;
 
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
   }
 
   .main-nav__item .site-link[href] {
-  &:hover {
-    color: @red;
+    &:hover {
+      color: @red;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
+  //.main-nav__link--active {
+  //  border-bottom: 2px solid @white;
+  //}
 }
-}
-

@@ -3,6 +3,8 @@
   flex-direction: column;
   width: 100%;
 
+  margin-bottom: -66px;
+
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -20,6 +22,10 @@
 
 
 @media (min-width: @tablet-width){
+  .page-header {
+    margin-bottom: -110px;
+  }
+
   .page-header__logo {
     height: 110px
   }
@@ -39,12 +45,19 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    display: flex;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 130px;
+  }
+
   .page-header {
     flex-direction: row;
     justify-content: space-around;
     min-height: 110px;
 
-    background-color: black);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .page-header__logo-image-tablet {
@@ -56,8 +69,10 @@
     width: 147px;
     height: 40px;
     margin-top: 27px;
-    margin-left: 130px;
-    margin-right: 162px;
+  }
+
+  .page-header__logo {
+    padding-right: 132px;
   }
 
 }

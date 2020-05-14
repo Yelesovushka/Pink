@@ -3,7 +3,6 @@
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
-  line-height: normal;
   letter-spacing: normal;
   text-align: center;
   color: @dark;
@@ -11,21 +10,24 @@
 
 .advantages__text {
   margin: 0;
-  padding: 36px 58px 30px 58px;
+  padding: 27px 58px 18px 58px;
+
+  line-height: 1.2;
+
 }
 
 .advantages__text span {
   display: block;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .advantages__wrapper {
-  padding: 70px 30px 322px 30px;
+  padding: 66px 30px 318px 30px;
 
   background-color: @white-two;
   background-image: url(../img/iphone-screen-mobile@1x.png);
   background-repeat: no-repeat;
-  background-position: center 524px;
+  background-position: center 507px;
 
   position: relative;
   overflow-x: hidden;
@@ -39,46 +41,69 @@
   width: 0;
   height: 0;
   border-right: 100vw solid #f2f2f2;
-  border-top: 25px solid #ffffff;
+  border-top: 30px solid #ffffff;
 }
 
 .advantages__item:nth-child(2) {
-  margin: 40px 0;
+  margin: 31px 0;
 }
 
 .advantages__header {
+  margin: 15px 0;
+
   font-size: 18px;
+  line-height: 24px;
   font-weight: bold;
   color: @black;
 }
 
 .advantages__item-text {
+  margin: 0;
+
   font-size: 14px;
+  line-height: 1.7;
   font-weight: 400;
   color: @dark;
 }
 
 @media (min-width: @tablet-width) {
   .advantages__text {
-    font-size: 40px
+    padding: 52px 36px;
+    padding-bottom: 45px;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .advantages__text span {
+    padding: 0;
+  }
+
+  .advantages__text span:last-child {
+    max-width: 450px;
+    margin: 0 auto;
+    line-height: 1.3;
   }
 
   .advantages__wrapper {
-    padding: 60px 25px 35px 30px;
+    padding: 60px 30px 18px 30px;
 
     background-color: @white-two;
     background-image: url(../img/iphone-screen-3-tablet@1x.png);
     background-repeat: no-repeat;
-    background-position: 20px 0px;
+    background-position: 20px 3px;
+  }
+
+  .advantages__wrapper::before {
+    border-top: 50px solid #ffffff;
   }
 
   .advantages__list {
-    width: 51%;
+    width: 50%;
     margin-left: auto;
-
   }
 
   .advantages__header {
+    margin: 13px 0;
     font-size: 18px;
     font-weight: bold;
     text-align: left;
@@ -89,12 +114,17 @@
     font-size: 14px;
     font-weight: 400;
     text-align: left;
+    line-height: 24px;
     color: @dark;
+  }
+
+  .advantages__item:nth-child(2) {
+    margin: 33px 0;
   }
 
   .advantages__hours {
     display: block;
-    padding: 102px 36px 83px 329px;
+    padding: 97px 36px 83px 329px;
 
     background-image: url(../img/timer.svg);
     background-repeat: no-repeat;
@@ -109,11 +139,15 @@
     color: @dark;
   }
 
+  .advantages__hours-text p {
+    margin: 10px 0;
+  }
+
   .advantages__hours-title {
-    margin-top: 0;
+    margin: 0;
     font-size: 30px;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 36px;
     color: @black;
   }
 
@@ -124,73 +158,108 @@
 
 @media (min-width: @desktop-width) {
   .advantages__text {
-    width: 731px;
-    height: 169px;
-    margin-top: 78px;
-    margin-bottom: 75px;
+    padding: 73px 233px;
+    margin: 0 auto;
 
     font-size: 50px;
+    line-height: 1;
   }
 
   .advantages__wrapper {
-    height: 510px;
-
-    background-image: url(../img/iphone-screen-1-desktop@1x.png), url(../img/iphone-screen-2-desktop@1x.png), url(../img/iphone-screen-3-desktop@1x.png);
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 140px top, center top, 780px top;
+    padding: 0;
+    background-image: none;
   }
 
-  .advantages__list {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 872px;
-    margin-top: auto;
-    margin-left: 163px;
-    margin-right: 165px;
+  .advantages__wrapper::before {
+    border-top: 90px solid #ffffff;
   }
 
-  .advantages__header {
-    font-size: 30px;
-    text-align: center;
-    line-height: 30px;
-  }
+  .advantages__hours-wrapper {
 
-  .advantages__item {
-    width: 236px;
-  }
-
-  .advantages__item-text {
-    text-align: center;
-  }
-
-  .advantages__hours {
     background-color: @white-two;
   }
 
-  .advantages__hours-24 {
-    width: 131px;
-    height: 87px;
-    margin-left: 153px;
-    padding: 64px 46px 72px 46px;
-    font-size: 120px;
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 872px;
+    width: 100%;
+    padding: 0 164px;
+    margin: 0 auto;
+  }
 
-    border: 15px solid @red;
+  .advantages__item {
+    min-width: 238px;
+    padding-top: 341px;
+  }
+
+  .advantages__header {
+    margin: 13px 0 24px 0;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .advantages__item-text {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .advantages__item:first-child {
+    background-image: url(../img/iphone-screen-1-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-size: 291px 297px;
+    background-position: center top;
+  }
+
+  .advantages__item:nth-child(2) {
+    margin: 0 82px;
+    background-image: url(../img/iphone-screen-2-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-size: 291px 297px;
+    background-position: center top;
+  }
+
+  .advantages__item:last-child {
+    background-image: url(../img/iphone-screen-3-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-size: 291px 297px;
+    background-position: center top;
   }
 
   .advantages__hours {
-    height: 429px;
+    width: 100%;
+    background-color: @white-two;
+  }
 
-    background-position: 125px 10px;
-    background-size: 310px auto;
+  .advantages__hours {
+    max-width: 940px;
+    padding: 158px 130px;
+    padding-bottom: 113px;
+    margin: 0 auto;
+
+    background-position: 130px 66px;
+    background-size: 298px auto;
   }
 
   .advantages__hours-text {
-    margin-left: 90px;
-    margin-right: 179px;
-    min-height: 197px;
+    margin: 0;
+    margin-left: auto;
+    width: 61%;
 
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .advantages__hours-text p {
+    margin: 21px 0 31px 0;
+  }
+
+  .advantages__hours-title {
+    margin-bottom: 5px;
+    line-height: 36px;
   }
 
 }
