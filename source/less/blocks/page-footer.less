@@ -1,47 +1,50 @@
-.page-footer {
-  display: block;
-  padding: 40px 70px;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: left;
-  color: @dark;
-}
-
-.page-footer__logo {
-  display: block;
-  text-align: center;
-
-}
-
-.page-footer__socials {
-
-}
-
-.page-footer__item {
-  display: inline-block;
-  width: 46px;
-  height: 46px;
-
-  border: 3px solid @white-two;
-  border-radius: 50%;
-}
-
 @media (min-width: @tablet-width) {
   .page-footer {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+
+    padding: 36px 20px;
   }
 
   .page-footer__socials {
     display: flex;
     justify-content: space-between;
 
+    width: 177px;
+    padding-right: 23px;
+  }
+
+  .page-footer__academy-link {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .page-footer__academy-logo{
+    padding-top: 14px;
+    padding-left: 11px;
+    vertical-align: middle;
+  }
+
+  .page-footer__twitter {
+    padding: 16px 13px 16px 15px;
+
+    border: 3px solid rgba(40, 54, 69, 0.3);
+    border-radius: 50px;
+  }
+
+  .page-footer__facebook {
+    padding: 12px 18px 16px 19px;
+
+    border: 3px solid rgba(40, 54, 69, 0.3);
+    border-radius: 50px;
+  }
+
+  .page-footer__youtube {
+    padding: 15px 13px 18px 18px;
+
+    border: 3px solid rgba(40, 54, 69, 0.3);
+    border-radius: 50px;
   }
 }
 
@@ -50,12 +53,22 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 197px;
+    max-width: 940px;
+    padding: 70px 130px;
+    margin: 0 auto;
   }
 
   .page-footer__socials {
     display: flex;
     justify-content: space-between;
     width: 172px;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
   }
 }
