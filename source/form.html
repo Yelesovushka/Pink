@@ -10,29 +10,34 @@
 
     <header class="page-header">
 
-      <a class="page-header__logo logo" href="./index.html">
-        <img class="page-header__logo-image" src="../img/logo-pink-white-mobile.svg" width="75px" height="22px">
-      </a>
+      <div class="page-header__wrapper">
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item site-list__item">
-              <a class="site-link" href="./index.html">Главная</a>
-            </li>
-            <li class="main-nav__item site-list__item">
-              <a class="site-link" href="./photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item site-list__item">
-              <a class="site-link">Конкурс</a>
-            </li>
-            <li class="main-nav__item site-list__item">
-              <a class="site-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <a class="page-header__logo logo" href="./index.html">
+          <img class="page-header__logo-image" src="../img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип фотоприложения Пинк">
+          <img class="page-header__logo-image-tablet visually-hidden" src="../img/logo-pink-white-tablet.svg" width="146" height="40" alt="Логотип фотоприложения Пинк">
+          <img class="page-header__logo-image-desktop visually-hidden" src="../img/logo-pink-white-desktop.svg" width="146" height="40" alt="Логотип фотоприложения Пинк">
+        </a>
+
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__toggle" type="button">Меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="main-nav__item site-list__item">
+                <a class="main-nav__link site-link" href="./index.html">Главная</a>
+              </li>
+              <li class="main-nav__item site-list__item">
+                <a class="main-nav__link site-link" href="./photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item site-list__item">
+                <a class="main-nav__link main-nav__link--active site-link">Конкурс</a>
+              </li>
+              <li class="main-nav__item site-list__item">
+                <a class="site-link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
     </header>
 

@@ -18,8 +18,8 @@
   left: 0;
   width: 0;
   height: 0;
-  border-right: 100vw solid #f2f2f2;
-  border-top: 25px solid #ffffff;
+  border-right: 100vw solid @white-two;
+  border-top: 25px solid @white;
 }
 
 .rates__table {
@@ -32,9 +32,10 @@
 }
 
 .rates__data {
-  padding: 15px 60px 14px 32px;
   position: relative;
   width: 280px;
+  padding: 15px 60px 14px 32px;
+
   font-size: 14px;
   font-weight: normal;
   line-height: 30px;
@@ -43,7 +44,6 @@
   text-transform: uppercase;
 
   background-color: @white;
-
   border: 2px solid #e5e5e5;
 
   &--field {
@@ -83,12 +83,12 @@
   &--empty {
     border: none;
   }
-
 }
 
 .rates__title {
-  padding: 15px 0 19px 0;
   width: 280px;
+  padding: 15px 0 19px 0;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
@@ -113,6 +113,7 @@
 
 .rates__price {
   display: block;
+
   font-size: 24px;
   font-weight: 300;
   line-height: 1.25;
@@ -121,10 +122,10 @@
 }
 
 .rates__toggles {
-  text-align: center;
   margin-top: 32px;
-}
 
+  text-align: center;
+}
 
 
 @media (min-width: @tablet-width){
@@ -133,11 +134,12 @@
   }
 
   .rates__data {
-    padding: 7px 10px 8px 15px;
     width: 25%;
+    padding: 7px 10px 8px 15px;
 
     &--field {
       display: table-cell;
+
       text-transform: none;
     }
 
@@ -160,8 +162,8 @@
   }
 
   .rates__title {
-    padding: 10px 30px 5px 30px;
     width: 25%;
+    padding: 10px 30px 5px 30px;
 
     font-size: 16px;
     line-height: 30px;
@@ -184,9 +186,8 @@
     padding-top: 87px;
     padding-bottom: 68px;
   }
-
-
 }
+
 
 @media (min-width: @desktop-width) {
   .rates__table {
@@ -204,6 +205,7 @@
 
   .rates__title {
     padding: 14px 30px 19px 32px;
+
     font-size: 18px;
     line-height: 1.67;
   }
@@ -221,5 +223,4 @@
       line-height: 1.67;
     }
   }
-
 }

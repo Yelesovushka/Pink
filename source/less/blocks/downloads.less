@@ -11,6 +11,7 @@
 
 .downloads__header {
   padding-top: 66px;
+
   background-color: @dark;
   background-image: url(../img/iphone-hand-mobile@1x.png), url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat, no-repeat;
@@ -20,12 +21,8 @@
 
 .downloads__header-text {
   max-width: 230px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 24px;
-  padding-bottom: 315px;
+  margin: 0 auto;
+  padding: 24px 0 315px;
 
   line-height: 28px;
 }
@@ -38,9 +35,8 @@
 
 .downloads__link {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 17px;
   margin: 0 auto;
+  padding: 15px 0 17px;
 
   font-size: 18px;
   font-weight: bold;
@@ -50,23 +46,22 @@
   border-radius: 50px;
 
   &:hover {
-    background-color: @white;
     color: @red;
+
+    background-color: @white;
   }
 
   &:active {
-    border-color: rgba(255, 255, 255, 0.3);
     color: rgba(210, 40, 86, 0.3);
+
+    border-color: rgba(255, 255, 255, 0.3);
   }
 }
 
 .downloads__list-apps {
   display: flex;
   align-items: baseline;
-  margin-bottom: 16px;
-  margin-top: 32px;
-  margin-left: 38px;
-  margin-right: 38px;
+  margin: 32px 38px 16px 38px;
 }
 
 .downloads__item {
@@ -81,9 +76,10 @@
 
 @media (min-width: @tablet-width) {
   .downloads__header {
-    padding-top: 93px;
-    height: auto;
     width: 51%;
+    height: auto;
+    padding-top: 93px;
+
     background: none;
   }
 
@@ -107,17 +103,15 @@
   }
 
   .downloads__apps {
+    width: 49%;
     padding-top: 34px;
     padding-right: 0;
-    width: 45%;
+
     background: none;
   }
 
   .downloads__list-apps {
-    margin-left: 46px;
-    margin-top: 45px;
-    margin-right: 47px;
-    margin-bottom: 32px;
+    margin: 43px 47px 32px 46px;
   }
 
   .downloads__text {
@@ -139,13 +133,12 @@
 
   .downloads__wrapper {
     max-width: 940px;
-    padding: 0 130px;
     margin: 0 auto;
   }
 
   .downloads__header {
-    padding-top: 110px;
     width: 31%;
+    padding-top: 110px;
   }
 
   .downloads__header-text {
@@ -154,13 +147,14 @@
   }
 
   .downloads__apps {
-    padding: 0;
     width: 32%;
+    padding: 0;
   }
 
   .downloads__link {
     margin-top: 50px;
     padding-bottom: 16px;
+
     font-size: 21px;
     line-height: 0.86;
   }
