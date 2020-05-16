@@ -1,42 +1,71 @@
 .page-footer {
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: left;
-  color: @dark;
-
-  outline: 1px solid green;
+  min-height: 284px;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 40px 71px;
 }
 
-.page-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 284px;
-  }
+.page-footer__logo {
+  display: block;
+  text-align: center;
+}
 
-  .page-footer__socials {
-    display: flex;
-    justify-content: space-between;
-    width: 172px;
-  }
+.page-footer__socials {
+  display: flex;
+  justify-content: space-around;
+  margin: 41px 0;
+}
+
+.page-footer__link {
+  display: flex;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50px;
+}
+
+.page-footer__academy-link {
+  display: block;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+}
+
+.page-footer__academy-logo {
+  vertical-align: middle;
+  padding-left: 12px;
+}
+
 
 @media (min-width: @tablet-width) {
   .page-footer {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 127px;
+    padding: 36px 20px;
+
+    min-height: 55px;;
+    max-width: 660px;
   }
 
   .page-footer__socials {
     display: flex;
     justify-content: space-between;
-    width: 172px;
+    width: 177px;
+    margin: 0;
+    margin-right: 23px;
+  }
+
+  .page-footer__academy-link {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .page-footer__academy-logo{
+    vertical-align: middle;
   }
 }
 
@@ -45,12 +74,22 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 197px;
+    max-width: 1200px;
+    padding: 70px 130px;
+    margin: 0 auto;
   }
 
   .page-footer__socials {
     display: flex;
     justify-content: space-between;
     width: 172px;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+
+  .logo-desktop {
+    display: block;
   }
 }

@@ -4,15 +4,22 @@
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.14;
+  line-height: 2.2;
   letter-spacing: normal;
   text-align: center;
   color: @dark;
+}
 
-  outline: 1px solid blue;
+.reviews__wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 28px 20px;
+  padding-bottom: 15px;
 }
 
 .reviews__author {
+  margin: 14px 0;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
@@ -20,30 +27,97 @@
 }
 
 .reviews__item {
-  display: flex;
-  flex-direction: column;
-
   position: relative;
 }
 
+.reviews__text {
+  padding: 0;
+  margin: 0;
+}
+
+.reviews__toggles {
+  margin: 21px;
+  margin-bottom: 0;
+}
+
+
 @media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    max-width: 660px;
+    padding: 42px 20px 16px 20px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+
     order: -1;
+  }
+
+  .reviews__author {
+    margin: 34px 0 3px 0;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .reviews__author-info {
     display: inline-block;
+    margin: 0;
   }
 }
 
+
 @media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 72px 0;
+    padding-bottom: 0;
+  }
+
   .reviews__text {
-    padding-top: 80px;
+    padding-top: 112px;
+
     order: -1;
+  }
+
+  .reviews__text:before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    top: 50%;
+    left: 0;
+    background-image: url(../img/icon-arrow-left.svg);
+    background-repeat: no-repeat;
+  }
+
+  .reviews__text::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 41px;
+    top: 50%;
+    right: 0;
+    background-image: url(../img/icon-arrow-right.svg);
+    background-repeat: no-repeat;
+  }
+
+  .reviews__author {
+    font-size: 24px;
   }
 
   .reviews__author-info {
     display: inline-block;
+
+    font-size: 18px;
   }
 
   .reviews__item::before {
@@ -52,8 +126,12 @@
     width: 79px;
     height: 63px;
     top: 0;
-    left: 50%;
+    left: 45%;
     background-image: url(../img/icon-quotes.svg);
     background-repeat: no-repeat;
+  }
+
+  .reviews__toggles {
+    display: none;
   }
 }

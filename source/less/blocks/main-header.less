@@ -1,0 +1,48 @@
+.main-header {
+  width: 100%;
+
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-header__container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 96px 45px 83px;
+}
+
+.main-header__title {
+  margin: 0;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.24;
+  text-align: center;
+  color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__container {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 180px 153px 140px;
+  }
+
+  .main-header__title {
+    margin: 0;
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__container {
+    padding-top: 175px;
+    padding-bottom: 99px;
+  }
+}

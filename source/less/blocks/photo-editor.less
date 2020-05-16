@@ -1,7 +1,5 @@
 .photo-editor {
-  display: flex;
-  flex-direction: column;
-
+  width: 100%;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -11,19 +9,17 @@
   text-align: center;
   color: @dark;
 
-  outline: 1px solid blue;
-}
-
-.photo-editor__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   background-color: @white-two;
 }
 
+.photo-editor__wrapper {
+  max-width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .photo-editor__post-button {
-  padding: 20px 91px 21px 91px;
+  padding: 20px 80px 21px 80px;
 
   font-size: 18px;
   font-weight: bold;
@@ -35,7 +31,7 @@
 }
 
 .photo-editor__reset-button {
-  padding: 20px 105px 21px 104px;
+  padding: 20px 80px 21px 80px;
 
   font-size: 18px;
   font-weight: bold;
