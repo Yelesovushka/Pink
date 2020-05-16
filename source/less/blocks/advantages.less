@@ -9,7 +9,8 @@
 }
 
 .advantages__text {
-  margin: 0;
+  max-width: 320px;
+  margin: 0 auto;
   padding: 27px 58px 18px 58px;
 
   line-height: 1.2;
@@ -44,6 +45,11 @@
   border-top: 30px solid @white;
 }
 
+.advantages__list {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .advantages__item {
   &--pink {
     margin: 31px 0;
@@ -70,6 +76,8 @@
 
 @media (min-width: @tablet-width) {
   .advantages__text {
+    max-width: 660px;
+    margin: 0 auto;
     padding: 52px 36px 45px 36px;
 
     font-size: 40px;
@@ -88,12 +96,10 @@
   }
 
   .advantages__wrapper {
-    padding: 60px 30px 18px 30px;
+    padding: 0 30px 0 30px;
 
     background-color: @white-two;
-    background-image: url(../img/iphone-screen-3-tablet@1x.png);
-    background-repeat: no-repeat;
-    background-position: 20px 3px;
+    background-image: none;
   }
 
   .advantages__wrapper::before {
@@ -101,10 +107,16 @@
   }
 
   .advantages__list {
+    max-width: 660px;
+    padding-left: 50%;
+    padding-top: 60px;
+    padding-bottom: 18px;
+
     position: relative;
 
-    width: 50%;
-    margin-left: auto;
+    background-image: url(../img/iphone-screen-3-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-position: left top;
   }
 
   .advantages__header {
@@ -140,6 +152,11 @@
     background-size: 238px 276px;
   }
 
+  .advantages__hours-wrapper {
+    max-width: 660px;
+    margin: 0 auto;
+  }
+
   .advantages__hours-text {
     font-size: 14px;
     line-height: 24px;
@@ -167,6 +184,7 @@
 
 @media (min-width: @desktop-width) {
   .advantages__text {
+    max-width: 1200px;
     padding: 73px 233px;
     margin: 0 auto;
 
@@ -197,6 +215,9 @@
     max-width: 872px;
     width: 100%;
     margin: 0 auto;
+    padding-left: 0;
+
+    background-image: none;
   }
 
   .advantages__header {
@@ -237,12 +258,16 @@
   }
 
   .advantages__hours {
-    max-width: 940px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 158px 0 113px;
+    padding: 158px 130px 113px;
 
-    background-position: 0 66px;
+    background-position: 130px 66px;
     background-size: 298px auto;
+  }
+
+  .advantages__hours-wrapper {
+    max-width: 100%;
   }
 
   .advantages__hours-text {

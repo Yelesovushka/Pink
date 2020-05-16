@@ -12,7 +12,7 @@
 }
 
 .photos__wrapper {
-  max-width: 400px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 45px 20px 0;
 }
@@ -25,7 +25,7 @@
 
 .photos__day-image {
   max-width: none;
-  width: auto;
+  width: 100vw;
   margin-left: calc((100vw - 100%)/(-2));
   margin-right: calc((100vw - 100%)/(-2));
 }
@@ -39,7 +39,8 @@
 }
 
 .photos__description {
-  margin: 8px 0 0 17px;
+  margin: 0;
+  padding: 8px 10px 0 17px;
 
   line-height: 1.71;
   text-align: left;
@@ -97,7 +98,8 @@
   }
 
   .photos__item {
-    min-width: 300px;
+    max-width: none;
+    width: calc(50% - 10px);
   }
 
   .photos__day {
@@ -134,6 +136,10 @@
 
   .photos__day {
     min-width: 940px;
+  }
+
+  .photos__item {
+    width: 300px;
   }
 
 }

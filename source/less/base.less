@@ -2,6 +2,10 @@ html {
   box-sizing: border-box;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   min-width: 320px;
   width: 100%;
@@ -13,10 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -25,6 +25,7 @@ img {
 .site-list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .site-list__item {
