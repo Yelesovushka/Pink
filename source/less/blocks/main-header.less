@@ -16,6 +16,10 @@
   padding: 96px 45px 83px;
 }
 
+.main-header__container--contest {
+  padding-bottom: 54px;
+}
+
 .main-header__title {
   margin: 0;
 
@@ -27,10 +31,18 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-header {
+    background-image: url(../img/bg-back-tablet@1x.jpg);
+  }
+
   .main-header__container {
     max-width: 660px;
     margin: 0 auto;
     padding: 180px 153px 140px;
+  }
+
+  .main-header__container--contest {
+    padding: 180px 50px 80px;
   }
 
   .main-header__title {
@@ -41,8 +53,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-header{
+    background-image: url(../img/bg-back-desktop@1x.jpg);
+  }
+
   .main-header__container {
-    padding-top: 175px;
-    padding-bottom: 99px;
+    max-width: 1200px;
+
+    &--contest {
+      padding: 175px 100px 100px;
+    }
   }
 }
