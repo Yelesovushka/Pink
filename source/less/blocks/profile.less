@@ -23,7 +23,6 @@
   color: @dark;
 }
 
-
 .profile__fieldset {
   display: flex;
   flex-direction: column;
@@ -32,14 +31,12 @@
   padding: 0 20px;
 }
 
-
 .profile__fieldset-item {
   font-size: 18px;
   line-height: 1.67;
   text-align: left;
   color: @dark;
 }
-
 
 .profile__text {
   padding: 0 28px 43px;
@@ -199,7 +196,7 @@
   border-color: @dark;
 }
 
-.profile__enter:active {
+.profile__enter:focus {
   border-color: @red;
 }
 
@@ -291,7 +288,7 @@
     order: -6;
   }
 
-  .profile__title-text--form {
+  .profile__subtitle-text {
     display: block;
   }
 
@@ -301,6 +298,12 @@
     border: none;
   }
 
+  .profile__input-wrap {
+    display: flex;
+    margin-bottom: 52px;
+    align-items: center;
+  }
+
   .profile__name .profile__item {
     padding: 0;
     padding-right: 15px;
@@ -308,12 +311,7 @@
 
   .profile__name .profile__enter {
     width: auto;
-    min-width: 524px;
-    margin-bottom: 52px;
-  }
-
-  .profile__enter:last-child {
-    margin-bottom: 66px;
+    flex-grow: 1;
   }
 
   .profile__apps {
@@ -454,14 +452,6 @@
     width: 50%;
     padding-top: 6px;
 
-    & .profile__enter {
-      min-width: 336px;
-      margin-bottom: 53px;
-
-      &:last-child {
-        margin-bottom: 57px;
-      }
-    }
   }
 
   .profile__apps {

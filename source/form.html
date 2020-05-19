@@ -54,24 +54,30 @@
         <form class="profile__form" action="https://echo.htmlacademy.ru">
           <p class="profile__title-text">
             Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
-            <span class="profile__title-text--form visually-hidden">Пожалуйста, заполните форму ниже:</span>
+            <span class="profile__subtitle-text visually-hidden">Пожалуйста, заполните форму ниже:</span>
           </p>
 
           <fieldset class="profile__name profile__fieldset">
-            <label class="profile__item" for="surname">
-              Фамилия:
-            </label>
-            <input class="profile__enter" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+            <div class="profile__input-wrap">
+              <label class="profile__item" for="surname">
+                Фамилия:
+              </label>
+              <input class="profile__enter" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
+            </div>
 
-            <label class="profile__item" for="name">
-              Имя:
-            </label>
-            <input class="profile__enter" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+            <div class="profile__input-wrap">
+              <label class="profile__item" for="name">
+                Имя:
+              </label>
+              <input class="profile__enter" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
+            </div>
 
-            <label class="profile__item" for="middlename">
-              Отчество:
-            </label>
-            <input class="profile__enter" type="text" id="middlename" name="middlename" placeholder="Ну и отчество тоже">
+            <div  class="profile__input-wrap">
+              <label class="profile__item" for="middlename">
+                Отчество:
+              </label>
+              <input class="profile__enter" type="text" id="middlename" name="middlename" placeholder="Ну и отчество тоже">
+            </div>
           </fieldset>
 
           <fieldset class="profile__achievements profile__fieldset">
@@ -129,7 +135,7 @@
             <div class="profile__wrapper">
               <legend class="profile__text">С каким приложением путешествовали?</legend>
 
-              <input class="profile__radio" type="radio" id="apps-ios" name="apps" value="ios">
+              <input class="profile__radio" type="radio" id="apps-ios" name="apps" value="ios" checked>
               <label class="profile__fieldset-item" for="apps-ios">
                 Pink для iOS
               </label>
@@ -188,7 +194,7 @@
         </a>
       </footer>
 
-      <div class="popup popup--wrong visually-hidden">
+      <section class="popup popup--wrong visually-hidden">
         <div class="popup__wrapper">
           <h3 class="popup__header">Что-то пошло не так!</h3>
           <p class="popup__text">
@@ -198,9 +204,9 @@
         <div class="popup__button-wrapper popup__button-wrapper--wrong">
           <button class="popup__button popup__button--wrong">Ок</button>
         </div>
-      </div>
+      </section>
 
-      <div class="popup popup--send visually-hidden">
+      <section class="popup popup--send visually-hidden">
         <div class="popup__wrapper">
           <h3 class="popup__header">Ваша заявка отправлена</h3>
           <p class="popup__text">
@@ -210,7 +216,7 @@
         <div class="popup__button-wrapper">
           <button class="popup__button popup__button--send">Закрыть окно</button>
         </div>
-      </div>
+      </section>
 
       <script>
       var navMain = document.querySelector('.main-nav');
