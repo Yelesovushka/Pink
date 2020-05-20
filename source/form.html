@@ -12,10 +12,12 @@
 
       <div class="page-header__wrapper">
 
-        <a class="page-header__logo logo" href="./index.html">
-          <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип фотоприложения Пинк">
-          <img class="page-header__logo-image-tablet visually-hidden" src="./img/logo-pink-white-tablet.svg" width="146" height="40" alt="Логотип фотоприложения Пинк">
-          <img class="page-header__logo-image-desktop visually-hidden" src="./img/logo-pink-white-desktop.svg" width="146" height="40" alt="Логотип фотоприложения Пинк">
+        <a class="page-header__logo logo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="./img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="./img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип фотоприложения Пинк">
+          </picture>
         </a>
 
         <nav class="main-nav main-nav--closed">
@@ -187,7 +189,10 @@
 
     <footer class="page-footer">
         <a class="page-footer__logo site-link">
-          <img class="page-footer__logo-image" src="./img/logo-pink-blue-mobile.svg" width="" height="" alt="Логотип фотоприложения Пинк">
+          <picture>
+            <source media="(min-width: 960px)" srcset="./img/logo-pink-blue-desktop.svg">
+            <img class="page-footer__logo-image" src="./img/logo-pink-blue-mobile.svg" width="150" height="40" alt="Логотип фотоприложения Пинк">
+          </picture>
         </a>
         <ul class="page-footer__socials site-list">
           <li class="page-footer__item site-list__item">
