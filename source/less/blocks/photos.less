@@ -34,8 +34,26 @@
   max-width: 280px;
   margin-bottom: 20px;
   padding-bottom: 19px;
+  position: relative;
 
   background-color: @white-two;
+}
+
+.photos__day::before {
+  content: "панорама дня";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 36px;
+  background-color: @red;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  color: @white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 7px;
 }
 
 .photos__img {
@@ -118,6 +136,10 @@
     margin-bottom: 50px;
   }
 
+  .photos__day::before {
+    top: 57px;
+  }
+
   .photos__description--day {
     display: flex;
     flex-wrap: wrap;
@@ -163,6 +185,10 @@
 
   .photos__day {
     width: 100%;
+  }
+
+  .photos__day::before {
+    top: 54px;
   }
 
   .photos__day-image {
