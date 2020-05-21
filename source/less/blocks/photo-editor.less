@@ -88,8 +88,6 @@
   border-radius: 50px;
   background-color: @white-two;
 
-  outline: none;
-
   &:hover {
     background-color: @red;
     color: @white;
@@ -108,23 +106,34 @@
   font-size: 18px;
   font-weight: bold;
   line-height: 1;
-  color: @dark;
+  color: rgba(40, 54, 69, 0.1);
 
-  opacity: 0.1;
-  border: 3px solid @dark;
+  border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50px;
-
-  outline: none;
+  background-color: @white-two;
 
   &:hover {
-    opacity: 0.3;
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
   }
 
   &:active {
-    opacity: 0.3;
-    background-color: @dark;
-    color: @white;
+    color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(40, 54, 69, 0);
+    background-color: rgba(40, 54, 69, 0.3);
   }
+}
+
+.photo-editor__icon:not(.photo-editor__icon--active) {
+  fill: rgba(40, 54, 69, 0.3);
+
+  &:hover {
+    fill: rgba(40, 54, 69, 0.5);
+  }
+}
+
+.photo-editor__icon--active {
+  fill: @red;
 }
 
 
@@ -249,6 +258,14 @@
     width: 260px;
   }
 
+  .photo-editor__icon--active {
+    fill: rgba(40, 54, 69, 0.3);
+
+    &:hover {
+      fill: rgba(40, 54, 69, 0.5);
+    }
+  }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -261,11 +278,10 @@
   }
 
   .photo-editor__wrapper {
-    width: 940px;
+    max-width: 940px;
     min-height: 514px;
 
     padding: 57px 60px 32px 80px;
-    max-width: 1200px;
     background-color: @white-two;
   }
 

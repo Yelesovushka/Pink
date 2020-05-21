@@ -106,7 +106,7 @@
 }
 
 .profile__achievements input[type=checkbox]:checked+label::before {
-  background-image: url(../img/icon-yes.svg);
+  background-image: url(../img/icon-yes-red.svg);
   background-repeat: no-repeat;
   background-size: 22px 16px;
   background-position: 50% 50%;
@@ -156,34 +156,30 @@
 
 .profile__enter {
   margin-bottom: 11px;
-  padding-top: 21px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 19px;
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
 
+  font-size: 18px;
+  line-height: 20px;
+
   border: 2px solid #e5e5e5;
   border-radius: 1px;
-  outline: none;
 }
 
 .profile__enter::-webkit-input-placeholder {
-  font-size: 18px;
-  line-height: 1.67;
   text-align: left;
   color: @dark;
 }
 
 .profile__enter:-moz-placeholder {
-  font-size: 18px;
-  line-height: 1.67;
   text-align: left;
   color: @dark;
 }
 
 .profile__enter:-ms-input-placeholder {
-  font-size: 18px;
-  line-height: 1.67;
   text-align: left;
   color: @dark;
 }
@@ -221,8 +217,6 @@
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
   border-radius: 2px;
-
-  outline: none;
 
   &:hover {
     background-color: #1c9b5e;
@@ -439,16 +433,16 @@
 @media (min-width: @desktop-width) {
 
 .profile__form {
-    max-width: 1200px;
+    max-width: 960px;
     margin: 0 auto;
-    padding: 91px 130px 0 130px;
+    padding: 91px 10px 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .profile__wrapper {
-    max-width: 1200px;
+    max-width: 960px;
   }
 
   .profile__title-text {
@@ -490,12 +484,15 @@
 
   .profile__contacts {
     width: 100%;
+  }
 
-    flex-direction: row;
+  .profile__contacts-wrap {
+    display: flex;
+    justify-content: space-between;
   }
 
   .profile__input-wrap--contacts {
-    max-width: 370px;
+    width: 370px;
   }
 
   .profile__achievements {
@@ -504,8 +501,8 @@
 
   .profile__checkbox-wrap {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .profile__input-wrap--checkbox {

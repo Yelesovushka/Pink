@@ -37,6 +37,16 @@
   font-weight: 300;
   text-align: center;
   color: @red;
+
+  &[href]:hover {
+    color: @dark;
+    text-decoration: underline;
+  }
+
+  &[href]:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
 }
 
 .contacts__list {
@@ -51,6 +61,7 @@
   background-image: url(../img/bg-map-mobile@1x.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center bottom;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url(../img/bg-map-mobile@2x.jpg);
@@ -75,6 +86,11 @@
   border-bottom: 0;
 }
 
+@media (max-width: @mobile-tablet) {
+  .contacts__item--address {
+    width: 100%;
+  }
+}
 
 @media (min-width: @tablet-width) {
   .contacts__wrapper {
