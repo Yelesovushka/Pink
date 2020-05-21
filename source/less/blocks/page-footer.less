@@ -8,6 +8,26 @@
 .page-footer__logo {
   display: block;
   text-align: center;
+
+  fill: @dark;
+
+  &:hover {
+    fill: @red;
+  }
+
+  &:active {
+    fill: @dark;
+    opacity: 0.3;
+  }
+}
+
+.footer-logo__star,
+.footer-logo__glasses--cropped {
+  display: none;
+}
+
+.footer-logo__glasses--full {
+  fill: @red;
 }
 
 .page-footer__socials {
@@ -19,22 +39,38 @@
 .page-footer__link {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50px;
+
+  &:hover {
+    border-color: @dark;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .page-footer__academy-link {
-  display: block;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
-}
 
-.page-footer__academy-logo {
-  vertical-align: middle;
-  padding-left: 12px;
+  fill: @red;
+
+  &:hover {
+    fill: @dark;
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.3);
+  }
 }
 
 
@@ -58,14 +94,13 @@
   }
 
   .page-footer__academy-link {
-    display: block;
     text-align: center;
     font-size: 14px;
     line-height: 18px;
   }
 
-  .page-footer__academy-logo{
-    vertical-align: middle;
+  .page-footer__academy-link {
+    margin-left: 20px;
   }
 }
 

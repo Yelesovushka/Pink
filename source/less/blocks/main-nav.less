@@ -7,6 +7,10 @@
   background-color: @dark;
 }
 
+.page-header--closed .main-nav {
+  display: none;
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
@@ -43,114 +47,23 @@
   }
 }
 
-.main-nav__toggle {
-  position: absolute;
-  top: -45px;
-  right: 20px;
-  z-index: 2;
-
-  display: block;
-  width: 50px;
-  height: 24px;
-  padding: 0;
-
-  background-color: rgba(0, 0, 0, 0);
-
-  cursor: pointer;
-  border: none;
-  outline: 0;
-}
-
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 50px;
-  height: 4px;
-
-  background-color: @white;
-  box-shadow: 0 10px 0 0 @white, 0 20px 0 0 @white;
-}
-
-.main-nav--closed .main-nav__toggle:hover::before {
-  background-color: @red;
-  box-shadow: 0 10px 0 0 @red, 0 20px 0 0 @red;
-}
-
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: desaturate(@red, 30%);
-  box-shadow: 0 10px 0 0 desaturate(@red, 30%), 0 20px 0 0 desaturate(@red, 30%);
-}
-
-.main-nav--opened .main-nav__toggle {
-
-  &::before,
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 10px;
-    right: 5px;
-
-    width: 25px;
-    height: 4px;
-
-    background-color: @white;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
-  }
-
-  &:hover::before,
-  &:hover::after {
-    background-color: @red;
-  }
-
-  &:active::before,
-  &:active::after {
-    background-color: desaturate(@red, 30%);
-  }
-}
-
 
 @media (max-width: @mobile-tablet) {
-  .main-nav--closed .main-nav__list {
-    display: none;
-  }
 
   .page-header--nojs .main-nav__list {
     display: flex;
   }
-
-  .page-header--nojs .main-nav__toggle {
-    display: none;
-  }
-}
-
-
-@media (min-width: @tablet-width) {
-  .main-nav__toggle {
-    top: -66px;
-  }
 }
 
 @media (min-width: @desktop-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-
   .main-nav {
     min-height: 110px;
 
     background-color: rgba(0, 0, 0, 0);
+  }
+
+  .page-header--closed .main-nav {
+    display: block;
   }
 
   .main-nav__list {
