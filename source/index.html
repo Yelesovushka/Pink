@@ -121,7 +121,9 @@
         </g>
       </symbol>
     </svg>
-<!---->
+<!-- page-header--nojs: при неработающем JS оставляет меню открытым;
+     page-header--closed: состояние закрытого меню;
+     page-header--opened: состояние открытого меню. -->
     <header class="page-header page-header--nojs page-header--closed">
 
       <div class="page-header__wrapper">
@@ -132,7 +134,7 @@
               <use xlink:href="#header-logo"></use>
             </svg>
           </a>
-          <button class="page-header__toggle" type="button"><span aria-label="Открыть меню"></span></button>
+          <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
         </div>
 
         <nav class="main-nav">
@@ -220,7 +222,7 @@
         <div class="advantages__hours-wrapper">
           <div class="advantages__hours visually-hidden">
             <div class="advantages__hours-text">
-              <h3 class="advantages__hours-title">Эффект на 24 часа!</h3>
+              <h3 class="advantages__hours-title">Эффект на&nbsp;24&nbsp;часа!</h3>
               <p> Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
               <a class="advantages__hours-link" href="#">Узнать больше об исследовании</a>
             </div>
@@ -235,7 +237,7 @@
             <li class="reviews__item reviews__item--active site-list__item">
               <h3 class="reviews__author">Николай Петров</h3>
               <p class="reviews__author-info visually-hidden">25 лет, водитель трамвая</p>
-              <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
             </li>
             <li class="reviews__item site-list__item visually-hidden">
               <h3 class="reviews__author">Николай Иванов</h3>
@@ -419,14 +421,21 @@
           header.classList.remove('page-header--closed');
           header.classList.add('page-header--opened');
 
+          navToggle.setAttribute('aria-label', 'Закрыть меню');
+
         } else {
           header.classList.add('page-header--closed');
           header.classList.remove('page-header--opened');
 
+          navToggle.setAttribute('aria-label', 'Открыть меню');
         }
       });
     </script>
 
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
     <script src="./js/picturefill.min.js"></script>
 
   </body>

@@ -133,7 +133,7 @@
               <use xlink:href="#header-logo"></use>
             </svg>
           </a>
-          <button class="page-header__toggle" type="button"><span aria-label="Открыть меню"></span></button>
+          <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
         </div>
 
         <nav class="main-nav">
@@ -372,7 +372,7 @@
 
             <div class="photo-editor__tools">
 
-            <label class="photo-editor__tool photo-editor__tool--cut">
+            <div class="photo-editor__tool photo-editor__tool--cut">
               <svg class="photo-editor__icon photo-editor__icon--cut photo-editor__icon--active" width="44" height="44">
                 <use xlink:href="#icon-cut"></use>
               </svg>
@@ -381,9 +381,9 @@
                 <div class="photo-editor__bar"></div>
                 <div class="photo-editor__toggle"></div>
               </div>
-            </label>
+            </div>
 
-            <label class="photo-editor__tool photo-editor__tool--bright">
+            <div class="photo-editor__tool photo-editor__tool--bright">
               <svg class="photo-editor__icon photo-editor__icon--bright" width="48" height="43">
                 <use xlink:href="#icon-bright"></use>
               </svg>
@@ -392,9 +392,9 @@
                 <div class="photo-editor__bar"></div>
                 <div class="photo-editor__toggle"></div>
               </div>
-            </label>
+            </div>
 
-            <label class="photo-editor__tool photo-editor__tool--contrast">
+            <div class="photo-editor__tool photo-editor__tool--contrast">
               <svg class="photo-editor__icon photo-editor__icon--contrast" width="32" height="32">
                 <use xlink:href="#icon-contrast"></use>
               </svg>
@@ -403,7 +403,7 @@
                 <div class="photo-editor__bar"></div>
                 <div class="photo-editor__toggle"></div>
               </div>
-            </label>
+            </div>
 
             </div>
 
@@ -448,7 +448,7 @@
         </ul>
         <a class="page-footer__academy-link site-link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <svg class="page-footer__academy-logo" width="27" height="34" alt="Логотип Академии">
+          <svg class="page-footer__academy-logo" width="27" height="34">
             <use xlink:href="#icon-academy"></use>
           </svg>
         </a>
@@ -467,15 +467,21 @@
           header.classList.remove('page-header--closed');
           header.classList.add('page-header--opened');
 
+          navToggle.setAttribute('aria-label', 'Закрыть меню');
+
         } else {
           header.classList.add('page-header--closed');
           header.classList.remove('page-header--opened');
 
+          navToggle.setAttribute('aria-label', 'Открыть меню');
         }
       });
     </script>
 
+    <script src="./js/picturefill.min.js"></script><script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
     <script src="./js/picturefill.min.js"></script>
-
   </body>
 </html>

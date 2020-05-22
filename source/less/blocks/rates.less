@@ -1,5 +1,5 @@
 .rates {
-  padding: 90px 0 29px 0;
+  padding: 90px 0 33px 0;
 
   font-family: OpenSans, Arial, sans-serif;
   font-stretch: normal;
@@ -34,7 +34,7 @@
 .rates__data {
   position: relative;
   width: 280px;
-  padding: 15px 60px 14px 32px;
+  padding: 15px 60px 14px 19px;
 
   font-size: 14px;
   font-weight: normal;
@@ -57,7 +57,7 @@
       content: '';
       position: absolute;
       top: 50%;
-      right: 29px;
+      right: 17px;
       width: 31px;
       height: 31px;
       background-repeat: no-repeat;
@@ -111,6 +111,10 @@
     border-radius: 0 2px 0 0;
   }
 
+  &--hit {
+    width: 250px;
+  }
+
   &--hit::before {
     content: "";
     position: absolute;
@@ -129,8 +133,8 @@
     position: absolute;
     width: 74px;
     height: 73px;
-    top: -2px;
-    left: -2px;
+    top: 1px;
+    left: -7px;
     font-size: 14px;
     line-height: 21px;
     color: @white;
@@ -207,6 +211,11 @@
       background-size: 61px 61px;
     }
 
+    &--hit::after {
+      top: -7px;
+      left: -8px;
+    }
+
   }
 
   .rates__price {
@@ -254,6 +263,11 @@
       height: 73px;
       background-image: url(../img/bg-hit.svg);
       background-size: 74px 73px;
+    }
+
+     &--hit::after {
+      top: 0;
+      left: -4px;
     }
   }
 

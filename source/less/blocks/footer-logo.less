@@ -1,0 +1,31 @@
+.footer-logo__star,
+.footer-logo__glasses--cropped {
+  display: none;
+}
+
+.footer-logo__glasses--full {
+  fill: @red;
+}
+
+
+@media (min-width: @tablet-width) {}
+
+
+@media (min-width: @desktop-width) {
+
+  .footer-logo__glasses--full {
+    display: none;
+  }
+
+  .footer-logo__glasses--cropped,
+  .footer-logo__star--1 {
+    display: block;
+    fill: @red;
+  }
+
+  .footer-logo__star--3 {
+    display: block;
+    fill: @dark;
+  }
+
+}

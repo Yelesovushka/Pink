@@ -1,0 +1,32 @@
+.header-logo__content {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .header-logo__mobile-content,
+  .header-logo__glasses--cropped,
+  .header-logo__star {
+    display: none;
+  }
+
+  .header-logo__content {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .header-logo__glasses--full {
+    display: none;
+  }
+
+  .header-logo__glasses--cropped,
+  .header-logo__star {
+    display: inline-block;
+  }
+
+  .header-logo__star {
+    fill: @red;
+  }
+}
