@@ -123,18 +123,21 @@
       </symbol>
     </svg>
 
-    <header class="page-header">
+    <header class="page-header page-header--nojs page-header--closed">
 
       <div class="page-header__wrapper">
 
-        <a class="page-header__logo logo" href="./index.html">
-          <svg class="page-header__logo-image" width="147" height="40" alt="Логотип фотоприложения Пинк">
-            <use xlink:href="#header-logo"></use>
-          </svg>
-        </a>
+        <div class="page-header__top">
+          <a class="page-header__logo logo">
+            <svg class="page-header__logo-image" width="147" height="40">
+              <use xlink:href="#header-logo"></use>
+            </svg>
+          </a>
+          <button class="page-header__toggle" type="button"><span aria-label="Открыть меню"></span></button>
+        </div>
 
-        <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button"><span aria-label="Открыть меню"></span></button>
+        <nav class="main-nav">
+
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="main-nav__item site-list__item">
@@ -311,28 +314,28 @@
 
     <footer class="page-footer">
         <a class="page-footer__logo site-link" href="./index.html">
-          <svg class="page-footer__logo-image" width="147" height="40" alt="Логотип фотоприложения Пинк">
+          <svg class="page-footer__logo-image" width="147" height="40">
             <use xlink:href="#footer-logo"></use>
           </svg>
         </a>
         <ul class="page-footer__socials site-list">
           <li class="page-footer__item site-list__item">
             <a class="page-footer__link site-link" href="#">
-              <svg class="page-footer__icon" width="18" height="14" alt="Twitter">
+              <svg class="page-footer__icon" width="18" height="14">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__item site-list__item">
             <a class="page-footer__link site-link" href="#">
-              <svg class="page-footer__icon" width="9" height="18" alt="Facebook">
+              <svg class="page-footer__icon" width="9" height="18">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer__item site-list__item">
             <a class="page-footer__link site-link" href="#">
-              <svg class="page-footer__icon" width="15" height="13" alt="YouTube">
+              <svg class="page-footer__icon" width="15" height="13">
                 <use xlink:href="#icon-youtube"></use>
               </svg>
             </a>
@@ -340,7 +343,7 @@
         </ul>
         <a class="page-footer__academy-link site-link" href="https://htmlacademy.ru/intensive/adaptive">
           Разработано
-          <svg class="page-footer__academy-logo" width="27" height="34" alt="Логотип Академии">
+          <svg class="page-footer__academy-logo" width="27" height="34">
             <use xlink:href="#icon-academy"></use>
           </svg>
         </a>
@@ -370,22 +373,23 @@
         </div>
       </section>
 
-      <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+       <script>
+      var navToggle = document.querySelector('.page-header__toggle');
       var header = document.querySelector('.page-header');
 
+      if (header.classList.contains('page-header--nojs')) {
+        header.classList.remove('page-header--nojs');
+      }
+
       navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
+        if (header.classList.contains('page-header--closed')) {
+          header.classList.remove('page-header--closed');
+          header.classList.add('page-header--opened');
 
-          header.classList.add('page-header--dark');
         } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
+          header.classList.add('page-header--closed');
+          header.classList.remove('page-header--opened');
 
-          header.classList.remove('page-header--dark');
         }
       });
     </script>
