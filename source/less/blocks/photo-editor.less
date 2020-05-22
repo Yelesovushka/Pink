@@ -25,43 +25,54 @@
   background-color: @white-two;
 }
 
+.photo-editor__controls {
+  display: flex;
+  margin: 29px auto;
+  width: 240px;
+  justify-content: space-between;
+  padding: 0px 26px 0 13px;
+
+  .photo-editor__btn {
+    border: none;
+    background-color: @white-two;
+    font-size: 0;
+    padding: 0;
+  }
+}
+
 .photo-editor__tools {
-  padding: 28px 39px 4px;
-  text-align: left;
+  height: 42px;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.photo-editor__tool:not(.photo-editor__tool--cut) {
+  display: none;
 }
 
 .photo-editor__tool {
-  display: inline;
-  vertical-align: middle;
-  padding: 0 16px 0 17px;
+  width: 100%;
+  height: 42px;
 }
 
 .photo-editor__range {
-  margin: 29px auto 0;
-  position: relative;
-
-  &--bright,
-  &--cut {
-    display: none;
-  }
+  padding: 1px 18px;
 }
 
 .photo-editor__bar {
   width: 240px;
   height: 2px;
-  background-color: @black;
+  background-color: @dark;
 }
 
 .photo-editor__toggle {
-  position: absolute;
-  width: 13px;
+  width: 14px;
   height: 14px;
-  top: -6px;
-  left: 193px;
-
-  background-color: @white;
   border: 2px solid @red;
-  border-radius: 50px;
+  border-radius: 50%;
+  background-color: @white;
+  margin: -8px 37px 0px auto;
 
   &:active {
     background-color: @red;
@@ -141,8 +152,7 @@
 @media (min-width: @tablet-width) {
   .photo-editor__text {
     max-width: 660px;
-    padding-top: 45px;
-    padding-bottom: 69px;
+    padding: 45px 100px 69px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -158,89 +168,90 @@
     height: 400px;
   }
 
-  .photo-editor__tools-form {
-    width: 52%;
-    padding-left: 47px;
+  .photo-editor__wrap-tools {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 34px;
+    padding-top: 9px;
+    justify-content: space-between;
+  }
+
+  .photo-editor__controls {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 163px;
+    width: 50px;
+
+    .photo-editor__icon {
+      fill: @red;
+
+      &--cut {
+        width: 22px;
+        height: 22px;
+      }
+
+      &--bright {
+        width: 24px;
+        height: 22px;
+      }
+
+      &--contrast {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .photo-editor__tool:not(.photo-editor__tool--cut) {
+    display: block;
   }
 
   .photo-editor__tools {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 0;
-    min-height: 198px;
+    margin: 0;
+    height: 185px;
+    width: auto;
+    padding-right: 8px;
+
+    .photo-editor__range {
+      padding: 1px 0;
+    }
+
+    .photo-editor__bar {
+      width: 202px;
+      margin-top: 9px;
+    }
   }
 
   .photo-editor__tool {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-    &--cut {
-      padding: 9px 0 0 3px;
+    .photo-editor__toggle {
+      margin-right: 42px;
     }
 
     &--bright {
-      padding: 29px 0 0 3px;
+      .photo-editor__toggle {
+        margin-right: auto;
+        margin-left: 25px;
+      }
     }
 
     &--contrast {
-      border-bottom: none;
-      padding: 22px 0 0 8px;
+      .photo-editor__toggle {
+        margin-right: 92px;
+      }
     }
   }
 
-  .photo-editor__icon {
-    &--cut {
-      width: 22px;
-      height: 22px;
-    }
-
-    &--bright {
-      width: 24px;
-      height: 22px;
-    }
-
-    &--contrast {
-      width: 16px;
-      height: 16px;
-    }
+  .photo-editor__buttons {
+    display: flex;
+    flex-direction: column;
   }
-
-  .photo-editor__range {
-    margin: 0;
-
-    display: inline;
-
-    & .photo-editor__bar {
-      width: 202px;
-    }
-
-    &--cut .photo-editor__bar {
-      margin: -22px 0 34px 52px;
-    }
-
-    &--bright .photo-editor__bar {
-      margin: -25px 0 34px 52px;
-    }
-
-    &--contrast .photo-editor__bar {
-      margin: -19px 0 34px 47px;
-    }
-
-    &--cut .photo-editor__toggle {
-      top: -3px;
-      left: 176px;
-    }
-
-    &--bright .photo-editor__toggle {
-      top: -6px;
-      left: 54px;
-    }
-
-    &--contrast .photo-editor__toggle {
-      top: 0;
-      left: 127px;
-    }
-  }
-
 
   .photo-editor__buttons {
     padding-top: 66px;
