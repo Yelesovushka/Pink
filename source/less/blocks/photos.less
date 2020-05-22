@@ -25,9 +25,9 @@
 
 .photos__day-image {
   max-width: none;
-  width: 100vw;
   margin-left: calc((100vw - 100%)/(-2));
   margin-right: calc((100vw - 100%)/(-2));
+  min-width: 100vw;
 }
 
 .photos__item {
@@ -137,11 +137,8 @@
   }
 
   .photos__day-image {
-    max-width: none;
-    width: auto;
     margin-left: calc((100vw - 100%)/-2 - 20px);
     margin-right: calc((100vw - 100%)/-2 - 20px);
-    min-width: 100vw;
   }
 
   .photos__day::before {
@@ -217,6 +214,7 @@
 
   .photos__day-image {
     max-width: 1200px;
+    min-width: none;
   }
 
   .photos__description--day {
