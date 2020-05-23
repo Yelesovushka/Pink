@@ -25,15 +25,16 @@
 
 .photos__day-image {
   max-width: none;
-  margin-left: calc((100vw - 100%)/(-2));
-  margin-right: calc((100vw - 100%)/(-2));
+  margin-left: calc((100vw - 100%) / (-2));
+  margin-right: calc((100vw - 100%) / (-2));
 }
 
 .photos__item {
+  position: relative;
+
   max-width: 280px;
   margin-bottom: 20px;
   padding-bottom: 19px;
-  position: relative;
 
   background-color: @white-two;
 }
@@ -84,6 +85,7 @@
 .photos__description-text {
   margin: 0;
   padding-bottom: 11px;
+
   line-height: 1.77;
 }
 
@@ -112,6 +114,7 @@
 
   .photos__text {
     padding: 0 25px 75px;
+
     font-size: 18px;
     line-height: 1.67;
   }
@@ -124,10 +127,10 @@
   }
 
   .photos__item {
-    max-width: none;
-    width: calc(50% - 10px);
     display: flex;
     flex-direction: column;
+    max-width: none;
+    width: calc(50% - 10px);
     padding-bottom: 0;
   }
 
@@ -142,8 +145,8 @@
   }
 
   .photos__day-image {
-    margin-left: calc((100vw - 100%)/-2 - 20px);
-    margin-right: calc((100vw - 100%)/-2 - 20px);
+    margin-left: calc((100vw - 100%) / -2 - 20px);
+    margin-right: calc((100vw - 100%) / -2 - 20px);
   }
 
   .photos__day::before {
@@ -185,12 +188,11 @@
   .photos__likes {
     display: flex;
     flex-direction: row-reverse;
-    width: auto;
     justify-content: space-between;
+    width: auto;
     margin-top: auto;
   }
 }
-
 
 
 @media (min-width: @desktop-width) {
@@ -224,5 +226,4 @@
   .photos__description--day {
     padding-right: 31px;
   }
-
 }

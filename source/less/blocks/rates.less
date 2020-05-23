@@ -1,14 +1,15 @@
 .rates {
   padding: 90px 0 33px 0;
 
-  font-family: OpenSans, Arial, sans-serif;
+  font-family: "OpenSans", "Arial", sans-serif;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
-  overflow-x: hidden;
 
   background-color: @white-two;
   position: relative;
+
+  overflow-x: hidden;
 }
 
 .rates::before {
@@ -56,7 +57,7 @@
     padding-right: 60px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 50%;
       right: 17px;
@@ -70,14 +71,14 @@
 
   &--yes {
     &::before {
-      background-image: url(../img/yes-green.svg);
+      background-image: url("../img/yes-green.svg");
       background-size: 31px 22px;
     }
   }
 
   &--no {
     &::before {
-      background-image: url(../img/no.svg);
+      background-image: url("../img/no.svg");
       background-size: 28px 28px;
     }
   }
@@ -124,7 +125,7 @@
     height: 73px;
     top: -2px;
     left: -2px;
-    background-image: url(../img/bg-hit.svg);
+    background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
     background-size: 74px 73px;
     background-position: center;
@@ -164,7 +165,7 @@
 }
 
 
-@media (min-width: @tablet-width){
+@media (min-width: @tablet-width) {
   .rates__wrapper {
     padding: 0 20px;
   }
@@ -209,7 +210,7 @@
       height: 61px;
       top: -2px;
       left: 0;
-      background-image: url(../img/bg-hit-tablet.svg);
+      background-image: url("../img/bg-hit-tablet.svg");
       background-size: 61px 61px;
     }
 
@@ -217,7 +218,6 @@
       top: -7px;
       left: -8px;
     }
-
   }
 
   .rates__price {
@@ -263,7 +263,7 @@
     &--hit::before {
       width: 74px;
       height: 73px;
-      background-image: url(../img/bg-hit.svg);
+      background-image: url("../img/bg-hit.svg");
       background-size: 74px 73px;
     }
 
