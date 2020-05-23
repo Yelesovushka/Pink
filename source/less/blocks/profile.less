@@ -14,7 +14,7 @@
 
 .profile__title-text {
   margin: 0;
-  padding: 45px 20px 28px 20px;
+  padding: 45px 20px 28px;
 
   font-size: 14px;
   line-height: 2.2;
@@ -24,12 +24,19 @@
 }
 
 .profile__fieldset {
-  border: none;
   margin: 0;
   padding: 0 20px;
+
+  border: none;
 }
 
 .profile__fieldset-item {
+  position: relative;
+
+  display: block;
+  padding-left: 69px;
+  margin-bottom: 52px;
+
   font-size: 18px;
   line-height: 1.67;
   text-align: left;
@@ -38,6 +45,7 @@
 
 .profile__text {
   padding: 0 35px 43px;
+
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
@@ -46,20 +54,13 @@
 }
 
 .profile__item {
+  padding: 6px 22px;
+
   font-size: 14px;
   line-height: 2.14;
   text-align: left;
   color: @red;
   text-transform: uppercase;
-  padding: 6px 22px;
-}
-
-.profile__fieldset-item {
-  display: block;
-  position: relative;
-
-  padding-left: 69px;
-  margin-bottom: 52px;
 }
 
 .profile__fieldset-item--last {
@@ -67,11 +68,12 @@
 }
 
 .profile__enter {
+  width: 100%;
+
   margin-top: 6px;
   margin-bottom: 17px;
   padding-left: 20px;
   padding-right: 20px;
-  width: 100%;
 
   font-size: 18px;
   line-height: 57px;
@@ -79,6 +81,10 @@
   border: 2px solid #e5e5e5;
   border-radius: 1px;
   outline: 0;
+}
+
+.profile__enter:not(.profile__emotions .profile__enter) {
+  height: 63px;
 }
 
 .profile__enter::-webkit-input-placeholder {
@@ -115,18 +121,13 @@
   padding-top: 38px;
 }
 
-.profile__achievements,
-.profile__apps {
-  background-color: @white-two;
+.profile__achievements input[type="checkbox"],
+.profile__apps input[type="radio"] {
+  display: none;
 }
 
-.profile__achievements input[type=checkbox],
-.profile__apps input[type=radio] {
-  display: none;
- }
-
 .profile__achievements .profile__fieldset-item::before {
-  content:"";
+  content: "";
   position: absolute;
   width: 38px;
   height: 38px;
@@ -145,8 +146,8 @@
   border-color: @red;
 }
 
-.profile__achievements input[type=checkbox]:checked+label::before {
-  background-image: url(../img/icon-yes-red.svg);
+.profile__achievements input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/yes-red.svg");
   background-repeat: no-repeat;
   background-size: 22px 16px;
   background-position: 50% 50%;
@@ -165,7 +166,7 @@
 }
 
 .profile__apps .profile__fieldset-item::before {
-  content:"";
+  content: "";
   position: absolute;
   width: 37px;
   height: 37px;
@@ -185,7 +186,7 @@
   box-shadow: 0 0 0 2px @red;
 }
 
-.profile__apps input[type=radio]:checked+label::before {
+.profile__apps input[type="radio"]:checked + label::before {
   background-color: @red;
   border-radius: 50px;
 }
@@ -195,10 +196,12 @@
   padding-left: 0;
   padding-right: 0;
 
+  background-color: @white-two;
+
   .profile__text {
-    background-color: @white-two;
-    padding-top: 38px;
     width: 100%;
+    padding-top: 38px;
+    background-color: @white-two;
   }
 
   .profile__wrapper {
@@ -219,19 +222,21 @@
   padding-bottom: 32px;
   margin-bottom: 0;
   margin-top: 0;
+
   line-height: 1.7;
 }
 
 
 .profile__button {
-  text-transform: uppercase;
   padding: 14px 45px;
   margin: 49px 20px 22px;
+
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
   text-align: center;
   color: @white;
+  text-transform: uppercase;
 
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
@@ -253,10 +258,11 @@
 }
 
 .profile__text-end {
+  padding: 0;
+
   font-size: 14px;
   line-height: 2.14;
   text-transform: uppercase;
-  padding: 0;
   text-align: center;
 }
 
@@ -264,8 +270,6 @@
   padding: 0;
   color: @red;
 }
-
-
 
 
 @media (min-width: @tablet-width) {
@@ -285,6 +289,7 @@
 
   .profile__fieldset {
     padding: 0;
+
     border: 2px solid #e5e5e5;
   }
 
@@ -308,9 +313,10 @@
 
   .profile__name {
     display: inline-block;
-    order: -5;
-    border: none;
     margin-bottom: 32px;
+    order: -5;
+
+    border: none;
   }
 
   .profile__input-wrap {
@@ -332,15 +338,17 @@
   }
 
   .profile__apps {
-    background-color: @white;
-    order: -4;
     padding: 49px 38px 14px;
     margin-bottom: 57px;
 
+    background-color: @white;
+    order: -4;
+
     .profile__text {
-      background-color: white;
       padding: 0 26px 0 24px;
       width: auto;
+
+      background-color: @white;
     }
 
     .profile__fieldset-item {
@@ -369,10 +377,10 @@
   }
 
   .profile__input-wrap--contacts {
+    position: relative;
     flex-direction: column-reverse;
     margin-bottom: 17px;
     align-items: end;
-    position: relative;
   }
 
   .profile__input-wrap--phone::before {
@@ -383,7 +391,7 @@
     width: 60px;
     height: 59px;
     background-color: #e5e5e5;
-    background-image: url(../img/icon-phone.svg);
+    background-image: url("../img/phone.svg");
     background-repeat: no-repeat;
     background-size: 20px 19px;
     background-position: center;
@@ -397,7 +405,7 @@
     width: 60px;
     height: 59px;
     background-color: #e5e5e5;
-    background-image: url(../img/icon-mail.svg);
+    background-image: url("../img/mail.svg");
     background-repeat: no-repeat;
     background-size: 18px 13px;
     background-position: center;
@@ -407,12 +415,14 @@
     padding: 48px 38px 6px;
     margin-bottom: 57px;
     order: -2;
+
     background-color: @white;
 
     .profile__text {
-      background-color: white;
-      padding: 0 31px 0;
       width: auto;
+      padding: 0 31px 0;
+
+      background-color: @white;
     }
 
     .profile__fieldset-item {
@@ -420,8 +430,8 @@
     }
 
     .profile__fieldset-item::before {
-        width: 39px;
-        height: 39px;
+      width: 39px;
+      height: 39px;
     }
   }
 
@@ -438,7 +448,6 @@
       padding-bottom: 25px;
       margin-bottom: 51px;
     }
-
   }
 
   .profile__footer {
@@ -455,17 +464,14 @@
 }
 
 
-
-
 @media (min-width: @desktop-width) {
-
-.profile__form {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 91px 10px 0;
+  .profile__form {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 91px 10px 0;
   }
 
   .profile__wrapper {
@@ -491,9 +497,9 @@
     padding-right: 35px;
     margin: 0;
 
-    .profile__input-wrap{
+    .profile__input-wrap {
       padding: 0;
-      margin-bottom: 54px
+      margin-bottom: 54px;
     }
 
     .profile__enter {
@@ -510,16 +516,16 @@
       margin: 0;
       padding: 0;
       margin-top: -8px;
+      margin-left: -37px;
       padding-left: 18px;
       padding-right: 18px;
+
       background-color: white;
-      margin-left: -37px;
     }
 
     .profile__wrapper {
       padding: 0;
     }
-
   }
 
   .profile__contacts {
@@ -589,5 +595,4 @@
   .profile__text-end--full {
     display: inline-block;
   }
-
 }
