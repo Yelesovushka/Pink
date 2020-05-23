@@ -27,7 +27,6 @@
   max-width: none;
   margin-left: calc((100vw - 100%)/(-2));
   margin-right: calc((100vw - 100%)/(-2));
-  min-width: 100vw;
 }
 
 .photos__item {
@@ -97,6 +96,12 @@
 
 .photos__heart {
   padding-right: 14px;
+}
+
+@media (max-width: @mobile-tablet) {
+  .photos__day-image {
+    min-width: 100vw;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -214,7 +219,6 @@
 
   .photos__day-image {
     max-width: 1200px;
-    min-width: none;
   }
 
   .photos__description--day {
