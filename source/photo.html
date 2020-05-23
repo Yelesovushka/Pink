@@ -363,7 +363,7 @@
 
       <section class="photo-editor">
         <h2 class="visually-hidden">Обработка фото</h2>
-        <p class="photo-editor__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="photo-editor__text">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         <div class="photo-editor__wrapper">
           <picture>
             <source media="(min-width: 960px)" srcset="./img/photo-road-desktop@1x.jpg 1x, ./img/photo-road-desktop@2x.jpg 2x">
@@ -371,22 +371,22 @@
             <img class="photo-editor__photo" src="./img/photo-road-mobile@1x.jpg" srcset="./img/photo-road-mobile@1x.jpg 1x, ./img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Красивое фото">
           </picture>
 
-          <div class="photo-editor__wrap-tools">
+          <form class="photo-editor__wrap-tools" action="https://echo.htmlacademy.ru">
 
             <div class="photo-editor__controls">
-              <button type="button" class="photo-editor__btn">
+              <button type="button" class="photo-editor__control-btn">
                 Обрезать
                 <svg class="photo-editor__icon photo-editor__icon--cut photo-editor__icon--active" width="50" height="48">
                   <use xlink:href="#icon-cut"></use>
                 </svg>
               </button>
-              <button type="button" class="photo-editor__btn">
+              <button type="button" class="photo-editor__control-btn">
                 Яркость
                 <svg class="photo-editor__icon photo-editor__icon--bright" width="48" height="51">
                   <use xlink:href="#icon-bright"></use>
                 </svg>
               </button>
-              <button type="button" class="photo-editor__btn">
+              <button type="button" class="photo-editor__control-btn">
                 Контраст
                 <svg class="photo-editor__icon photo-editor__icon--contrast" width="32" height="32">
                   <use xlink:href="#icon-contrast"></use>
@@ -419,8 +419,8 @@
             </div>
 
             <div class="photo-editor__buttons">
-              <button class="photo-editor__post-button site-link" type="submit">Запостить</button>
-              <button class="photo-editor__reset-button site-link" type="reset">Отмена</button>
+              <button class="photo-editor__button photo-editor__button--post" type="submit">Запостить</button>
+              <button class="photo-editor__button photo-editor__button--reset" type="reset">Отмена</button>
             </div>
 
           </div>
